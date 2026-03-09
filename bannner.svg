@@ -23,12 +23,17 @@
         }
         .today-header {margin-bottom: 5px}
         .title { margin: 0; padding: 18px 0 0; text-align: center; font-size: 15px; font-weight: 700; letter-spacing: 3px; }
-        .date { margin: 12px 0; text-align: center; font-size: 14px; letter-spacing: 1.5px; color: #ABABAB; }
+        .date { margin: 12px 0; text-align: center; font-size: 14px; letter-spacing: 1.5px; color: #F4F4F4; }
         .dashboard { display: flex; flex: 1; }
         .col { flex: 1; text-align: center; }
         .label { font-size: 24px; letter-spacing: 1.2px; color: #ABABAB; }
-        .val { font-size: 64px; font-weight: 700; color: #F4F4F4; letter-spacing: 5px; line-height: 1.25; margin: 6px 0 }
+        .val { height: 80px; overflow: hidden; font-size: 64px; font-weight: 700; color: #F4F4F4; letter-spacing: 5px; line-height: 1.25; margin: 6px 0 }
         .v-line { width: 1px; height: 80%; background: #ABABAB; opacity: 0.4 }
+        .slot-strip { display: flex; flex-direction: column; animation: scrollDown 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+        @keyframes scrollDown {
+          0% { transform: translateY(-300%); } 
+          100% { transform: translateY(0); }
+        }
       </style>
 
       <div class="banner">
@@ -41,14 +46,24 @@
         <div class="dashboard">
           <div class="col">
             <div class="label">total commits</div>
-            <div class="val">1,234</div>
+            <div class="val">
+              <div class="slot-strip">
+                <div>1,234</div> 
+                <div>1,233</div> <div>1,232</div> <div>1,231</div> <div>1,230</div> <div>1,229</div>
+              </div>
+            </div>
           </div>
           
           <div class="v-line"></div>
 
           <div class="col">
             <div class="label" style="margin-bottom: 4px;">daily streak</div>
-            <div class="val">100</div>
+            <div class="val">
+              <div class="slot-strip">
+                <div>100</div>
+                <div>99</div> <div>98</div> <div>97</div> <div>96</div> <div>95</div>
+              </div>
+            </div>
             <!-- <div class="label" style="font-size: 9px; margin-top: 2px; margin-bottom: 0;">days</div> -->
           </div>
           
