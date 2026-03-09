@@ -26,11 +26,12 @@
         .date { margin: 16px 0; text-align: center; font-size: 14px; letter-spacing: 1.5px; color: #F4F4F4; }
         .dashboard { display: flex; flex: 1; }
         .col { flex: 1; text-align: center; }
-        .label { font-size: 18px; letter-spacing: 1.2px; color: #ABABAB; }
+        .label { font-size: 18px; letter-spacing: 1.2px; color: #F4F4F4; }
         .val { height: 60px; overflow: hidden; font-size: 48px; font-weight: 700; color: #F4F4F4; letter-spacing: 5px; line-height: 1.25; margin: 6px 0 }
-        .v-line { width: 1px; height: 80%; background: #ABABAB; opacity: 0.4 }
+        .v-line { width: 4px; height: 80%; background: #ABABAB; opacity: 0.4 }
         .slot-strip { display: flex; flex-direction: column; animation: scrollDown 4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
         @keyframes scrollDown {
+          0% { transform: translateY(-300%); } 
           50% { transform: translateY(-300%); } 
           100% { transform: translateY(0); }
         }
