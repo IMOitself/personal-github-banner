@@ -1,9 +1,9 @@
-<svg width="480" height="180" viewBox="0 0 480 180" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject x="0" y="0" width="480" height="180">
+<svg width="880" height="180" viewBox="0 0 880 180" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject x="0" y="0" width="880" height="180">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         .banner { 
-          width: 480px;
+          width: 880px;
           height: 180px; 
           box-sizing: border-box; 
           padding: 0 20px; 
@@ -14,14 +14,14 @@
           background-color: #2B2D5B;
           letter-spacing: 1.5px;
         }
-        .today-header {margin-bottom: 10px}
-        .title { margin: 0; padding: 18px 0 0; text-align: center; font-size: 15px; font-weight: 700; letter-spacing: 3px; }
         .divider { 
           height: 1px; 
           width: 100%; 
           margin: 10px 0;
           background: linear-gradient(90deg, transparent, #F4F4F4, #F4F4F4, transparent);
         }
+        .today-header {margin-bottom: 10px}
+        .title { margin: 0; padding: 18px 0 0; text-align: center; font-size: 15px; font-weight: 700; letter-spacing: 3px; }
         .date { margin: 0 0 16px; text-align: center; font-size: 12px; letter-spacing: 1.5px; color: #ABABAB; }
         .dashboard { display: flex; flex: 1; }
         .col { flex: 1; text-align: center; }
