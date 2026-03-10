@@ -50,7 +50,7 @@
             <div class="val">
               <div class="slot-strip">
                 <div>1,234</div> 
-                <div>1,233</div> <div>1,232</div> <div>1,231</div> <div>1,230</div> <div>1,229</div>
+                <div>1,233</div> <div>1,232</div>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@
             <div class="val">
               <div class="slot-strip">
                 <div>100</div>
-                <div>99</div> <div>98</div> <div>97</div> <div>96</div> <div>95</div>
+                <div>99</div>
               </div>
             </div>
             <!-- <div class="label" style="font-size: 9px; margin-top: 2px; margin-bottom: 0;">days</div> -->
