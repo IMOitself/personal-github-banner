@@ -1,0 +1,12 @@
+# i got this code from https://docs.github.com/en/graphql/guides/introduction-to-graphql#discovering-the-graphql-api
+query {
+  __type(name: "Repository") {
+    name
+    kind
+    description
+    fields {
+      name
+      description
+    }
+  }
+}

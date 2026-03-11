@@ -1,0 +1,555 @@
+{
+  "data": {
+    "__type": {
+      "name": "Repository",
+      "kind": "OBJECT",
+      "description": "A repository contains the content for a project.",
+      "fields": [
+        {
+          "name": "allowUpdateBranch",
+          "description": "Whether or not a pull request head branch that is behind its base branch can always be updated even if it is not required to be up to date before merging."
+        },
+        {
+          "name": "archivedAt",
+          "description": "Identifies the date and time when the repository was archived."
+        },
+        {
+          "name": "assignableUsers",
+          "description": "A list of users that can be assigned to issues in this repository."
+        },
+        {
+          "name": "autoMergeAllowed",
+          "description": "Whether or not Auto-merge can be enabled on pull requests in this repository."
+        },
+        {
+          "name": "branchProtectionRules",
+          "description": "A list of branch protection rules for this repository."
+        },
+        {
+          "name": "codeOfConduct",
+          "description": "Returns the code of conduct for this repository"
+        },
+        {
+          "name": "codeowners",
+          "description": "Information extracted from the repository's `CODEOWNERS` file."
+        },
+        {
+          "name": "collaborators",
+          "description": "A list of collaborators associated with the repository."
+        },
+        {
+          "name": "commitComments",
+          "description": "A list of commit comments associated with the repository."
+        },
+        {
+          "name": "contactLinks",
+          "description": "Returns a list of contact links associated to the repository"
+        },
+        {
+          "name": "contributingGuidelines",
+          "description": "Returns the contributing guidelines for this repository."
+        },
+        {
+          "name": "createdAt",
+          "description": "Identifies the date and time when the object was created."
+        },
+        {
+          "name": "databaseId",
+          "description": "Identifies the primary key from the database."
+        },
+        {
+          "name": "defaultBranchRef",
+          "description": "The Ref associated with the repository's default branch."
+        },
+        {
+          "name": "deleteBranchOnMerge",
+          "description": "Whether or not branches are automatically deleted when merged in this repository."
+        },
+        {
+          "name": "dependencyGraphManifests",
+          "description": "A list of dependency manifests contained in the repository"
+        },
+        {
+          "name": "deployKeys",
+          "description": "A list of deploy keys that are on this repository."
+        },
+        {
+          "name": "deployments",
+          "description": "Deployments associated with the repository"
+        },
+        {
+          "name": "description",
+          "description": "The description of the repository."
+        },
+        {
+          "name": "descriptionHTML",
+          "description": "The description of the repository rendered to HTML."
+        },
+        {
+          "name": "discussion",
+          "description": "Returns a single discussion from the current repository by number."
+        },
+        {
+          "name": "discussionCategories",
+          "description": "A list of discussion categories that are available in the repository."
+        },
+        {
+          "name": "discussionCategory",
+          "description": "A discussion category by slug."
+        },
+        {
+          "name": "discussions",
+          "description": "A list of discussions that have been opened in the repository."
+        },
+        {
+          "name": "diskUsage",
+          "description": "The number of kilobytes this repository occupies on disk."
+        },
+        {
+          "name": "environment",
+          "description": "Returns a single active environment from the current repository by name."
+        },
+        {
+          "name": "environments",
+          "description": "A list of environments that are in this repository."
+        },
+        {
+          "name": "forkCount",
+          "description": "Returns how many forks there are of this repository in the whole network."
+        },
+        {
+          "name": "forkingAllowed",
+          "description": "Whether this repository allows forks."
+        },
+        {
+          "name": "forks",
+          "description": "A list of direct forked repositories."
+        },
+        {
+          "name": "fundingLinks",
+          "description": "The funding links for this repository"
+        },
+        {
+          "name": "hasDiscussionsEnabled",
+          "description": "Indicates if the repository has the Discussions feature enabled."
+        },
+        {
+          "name": "hasIssuesEnabled",
+          "description": "Indicates if the repository has issues feature enabled."
+        },
+        {
+          "name": "hasProjectsEnabled",
+          "description": "Indicates if the repository has the Projects feature enabled."
+        },
+        {
+          "name": "hasPullRequestsEnabled",
+          "description": "Indicates if the repository has the pull requests feature enabled."
+        },
+        {
+          "name": "hasSponsorshipsEnabled",
+          "description": "Indicates if the repository displays a Sponsor button for financial contributions."
+        },
+        {
+          "name": "hasVulnerabilityAlertsEnabled",
+          "description": "Whether vulnerability alerts are enabled for the repository."
+        },
+        {
+          "name": "hasWikiEnabled",
+          "description": "Indicates if the repository has wiki feature enabled."
+        },
+        {
+          "name": "homepageUrl",
+          "description": "The repository's URL."
+        },
+        {
+          "name": "id",
+          "description": "The Node ID of the Repository object"
+        },
+        {
+          "name": "interactionAbility",
+          "description": "The interaction ability settings for this repository."
+        },
+        {
+          "name": "isArchived",
+          "description": "Indicates if the repository is unmaintained."
+        },
+        {
+          "name": "isBlankIssuesEnabled",
+          "description": "Returns true if the viewer can create a blank issue in this repository"
+        },
+        {
+          "name": "isDisabled",
+          "description": "Returns whether or not this repository disabled."
+        },
+        {
+          "name": "isEmpty",
+          "description": "Returns whether or not this repository is empty."
+        },
+        {
+          "name": "isFork",
+          "description": "Identifies if the repository is a fork."
+        },
+        {
+          "name": "isInOrganization",
+          "description": "Indicates if a repository is either owned by an organization, or is a private fork of an organization repository."
+        },
+        {
+          "name": "isLocked",
+          "description": "Indicates if the repository has been locked or not."
+        },
+        {
+          "name": "isMirror",
+          "description": "Identifies if the repository is a mirror."
+        },
+        {
+          "name": "isPrivate",
+          "description": "Identifies if the repository is private or internal."
+        },
+        {
+          "name": "isSecurityPolicyEnabled",
+          "description": "Returns true if this repository has a security policy"
+        },
+        {
+          "name": "isTemplate",
+          "description": "Identifies if the repository is a template that can be used to generate new repositories."
+        },
+        {
+          "name": "isUserConfigurationRepository",
+          "description": "Is this repository a user configuration repository?"
+        },
+        {
+          "name": "issue",
+          "description": "Returns a single issue from the current repository by number."
+        },
+        {
+          "name": "issueOrPullRequest",
+          "description": "Returns a single issue-like object from the current repository by number."
+        },
+        {
+          "name": "issueTemplates",
+          "description": "Returns a list of issue templates associated to the repository"
+        },
+        {
+          "name": "issueType",
+          "description": "Returns a single issue type by name"
+        },
+        {
+          "name": "issueTypes",
+          "description": "A list of the repository's issue types"
+        },
+        {
+          "name": "issues",
+          "description": "A list of issues that have been opened in the repository."
+        },
+        {
+          "name": "label",
+          "description": "Returns a single label by name"
+        },
+        {
+          "name": "labels",
+          "description": "A list of labels associated with the repository."
+        },
+        {
+          "name": "languages",
+          "description": "A list containing a breakdown of the language composition of the repository."
+        },
+        {
+          "name": "latestRelease",
+          "description": "Get the latest release for the repository if one exists."
+        },
+        {
+          "name": "licenseInfo",
+          "description": "The license associated with the repository"
+        },
+        {
+          "name": "lockReason",
+          "description": "The reason the repository has been locked."
+        },
+        {
+          "name": "mentionableUsers",
+          "description": "A list of Users that can be mentioned in the context of the repository."
+        },
+        {
+          "name": "mergeCommitAllowed",
+          "description": "Whether or not PRs are merged with a merge commit on this repository."
+        },
+        {
+          "name": "mergeCommitMessage",
+          "description": "How the default commit message will be generated when merging a pull request."
+        },
+        {
+          "name": "mergeCommitTitle",
+          "description": "How the default commit title will be generated when merging a pull request."
+        },
+        {
+          "name": "mergeQueue",
+          "description": "The merge queue for a specified branch, otherwise the default branch if not provided."
+        },
+        {
+          "name": "milestone",
+          "description": "Returns a single milestone from the current repository by number."
+        },
+        {
+          "name": "milestones",
+          "description": "A list of milestones associated with the repository."
+        },
+        {
+          "name": "mirrorUrl",
+          "description": "The repository's original mirror URL."
+        },
+        {
+          "name": "name",
+          "description": "The name of the repository."
+        },
+        {
+          "name": "nameWithOwner",
+          "description": "The repository's name with owner."
+        },
+        {
+          "name": "object",
+          "description": "A Git object in the repository"
+        },
+        {
+          "name": "openGraphImageUrl",
+          "description": "The image used to represent this repository in Open Graph data."
+        },
+        {
+          "name": "owner",
+          "description": "The User owner of the repository."
+        },
+        {
+          "name": "packages",
+          "description": "A list of packages under the owner."
+        },
+        {
+          "name": "parent",
+          "description": "The repository parent, if this is a fork."
+        },
+        {
+          "name": "pinnedDiscussions",
+          "description": "A list of discussions that have been pinned in this repository."
+        },
+        {
+          "name": "pinnedEnvironments",
+          "description": "A list of pinned environments for this repository."
+        },
+        {
+          "name": "pinnedIssues",
+          "description": "A list of pinned issues for this repository."
+        },
+        {
+          "name": "planFeatures",
+          "description": "Returns information about the availability of certain features and limits based on the repository's billing plan."
+        },
+        {
+          "name": "primaryLanguage",
+          "description": "The primary language of the repository's code."
+        },
+        {
+          "name": "projectV2",
+          "description": "Finds and returns the Project according to the provided Project number."
+        },
+        {
+          "name": "projectsResourcePath",
+          "description": "The HTTP path listing the repository's projects"
+        },
+        {
+          "name": "projectsUrl",
+          "description": "The HTTP URL listing the repository's projects"
+        },
+        {
+          "name": "projectsV2",
+          "description": "List of projects linked to this repository."
+        },
+        {
+          "name": "pullRequest",
+          "description": "Returns a single pull request from the current repository by number."
+        },
+        {
+          "name": "pullRequestCreationPolicy",
+          "description": "The policy controlling who can create pull requests in this repository."
+        },
+        {
+          "name": "pullRequestTemplates",
+          "description": "Returns a list of pull request templates associated to the repository"
+        },
+        {
+          "name": "pullRequests",
+          "description": "A list of pull requests that have been opened in the repository."
+        },
+        {
+          "name": "pushedAt",
+          "description": "Identifies the date and time when the repository was last pushed to."
+        },
+        {
+          "name": "rebaseMergeAllowed",
+          "description": "Whether or not rebase-merging is enabled on this repository."
+        },
+        {
+          "name": "recentProjects",
+          "description": "Recent projects that this user has modified in the context of the owner."
+        },
+        {
+          "name": "ref",
+          "description": "Fetch a given ref from the repository"
+        },
+        {
+          "name": "refs",
+          "description": "Fetch a list of refs from the repository"
+        },
+        {
+          "name": "release",
+          "description": "Lookup a single release given various criteria."
+        },
+        {
+          "name": "releases",
+          "description": "List of releases which are dependent on this repository."
+        },
+        {
+          "name": "repositoryCustomPropertyValue",
+          "description": "A custom property value for the repository."
+        },
+        {
+          "name": "repositoryCustomPropertyValues",
+          "description": "A list of custom properties and their associated values for a repository."
+        },
+        {
+          "name": "repositoryTopics",
+          "description": "A list of applied repository-topic associations for this repository."
+        },
+        {
+          "name": "resourcePath",
+          "description": "The HTTP path for this repository"
+        },
+        {
+          "name": "ruleset",
+          "description": "Returns a single ruleset from the current repository by ID."
+        },
+        {
+          "name": "rulesets",
+          "description": "A list of rulesets for this repository."
+        },
+        {
+          "name": "securityPolicyUrl",
+          "description": "The security policy URL."
+        },
+        {
+          "name": "shortDescriptionHTML",
+          "description": "A description of the repository, rendered to HTML without any links in it."
+        },
+        {
+          "name": "squashMergeAllowed",
+          "description": "Whether or not squash-merging is enabled on this repository."
+        },
+        {
+          "name": "squashMergeCommitMessage",
+          "description": "How the default commit message will be generated when squash merging a pull request."
+        },
+        {
+          "name": "squashMergeCommitTitle",
+          "description": "How the default commit title will be generated when squash merging a pull request."
+        },
+        {
+          "name": "sshUrl",
+          "description": "The SSH URL to clone this repository"
+        },
+        {
+          "name": "stargazerCount",
+          "description": "Returns a count of how many stargazers there are on this object\n"
+        },
+        {
+          "name": "stargazers",
+          "description": "A list of users who have starred this starrable."
+        },
+        {
+          "name": "submodules",
+          "description": "Returns a list of all submodules in this repository parsed from the .gitmodules file as of the default branch's HEAD commit."
+        },
+        {
+          "name": "suggestedActors",
+          "description": "A list of suggested actors that can be attributed to content in this repository."
+        },
+        {
+          "name": "tempCloneToken",
+          "description": "Temporary authentication token for cloning this repository."
+        },
+        {
+          "name": "templateRepository",
+          "description": "The repository from which this repository was generated, if any."
+        },
+        {
+          "name": "updatedAt",
+          "description": "Identifies the date and time when the object was last updated."
+        },
+        {
+          "name": "url",
+          "description": "The HTTP URL for this repository"
+        },
+        {
+          "name": "usesCustomOpenGraphImage",
+          "description": "Whether this repository has a custom image to use with Open Graph as opposed to being represented by the owner's avatar."
+        },
+        {
+          "name": "viewerCanAdminister",
+          "description": "Indicates whether the viewer has admin permissions on this repository."
+        },
+        {
+          "name": "viewerCanSeeIssueFields",
+          "description": "Indicates whether the current user can see issue fields in this repository"
+        },
+        {
+          "name": "viewerCanSubscribe",
+          "description": "Check if the viewer is able to change their subscription status for the repository."
+        },
+        {
+          "name": "viewerCanUpdateTopics",
+          "description": "Indicates whether the viewer can update the topics of this repository."
+        },
+        {
+          "name": "viewerDefaultCommitEmail",
+          "description": "The last commit email for the viewer."
+        },
+        {
+          "name": "viewerDefaultMergeMethod",
+          "description": "The last used merge method by the viewer or the default for the repository."
+        },
+        {
+          "name": "viewerHasStarred",
+          "description": "Returns a boolean indicating whether the viewing user has starred this starrable."
+        },
+        {
+          "name": "viewerPermission",
+          "description": "The users permission level on the repository. Will return null if authenticated as an GitHub App."
+        },
+        {
+          "name": "viewerPossibleCommitEmails",
+          "description": "A list of emails this viewer can commit with."
+        },
+        {
+          "name": "viewerSubscription",
+          "description": "Identifies if the viewer is watching, not watching, or ignoring the subscribable entity."
+        },
+        {
+          "name": "visibility",
+          "description": "Indicates the repository's visibility level."
+        },
+        {
+          "name": "vulnerabilityAlert",
+          "description": "Returns a single vulnerability alert from the current repository by number."
+        },
+        {
+          "name": "vulnerabilityAlerts",
+          "description": "A list of vulnerability alerts that are on this repository."
+        },
+        {
+          "name": "watchers",
+          "description": "A list of users watching the repository."
+        },
+        {
+          "name": "webCommitSignoffRequired",
+          "description": "Whether contributors are required to sign off on web-based commits in this repository."
+        }
+      ]
+    }
+  }
+}
