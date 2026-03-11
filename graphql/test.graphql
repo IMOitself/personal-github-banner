@@ -1,5 +1,11 @@
-query {
+# i got this code from https://docs.github.com/en/graphql/guides/forming-calls-with-graphql
+query($number_of_repos:Int!) {
   viewer {
-    login
+    name
+     repositories(last: $number_of_repos) {
+       nodes {
+         name
+       }
+     }
    }
 }
