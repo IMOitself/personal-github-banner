@@ -16,7 +16,7 @@
     ```
 - run to install dependencies
     ```
-    pip install requests python-dotenv
+    pip install requests python-dotenv pathlib
     ```
 - run 
     ```
