@@ -8,6 +8,21 @@
 
 - this project is meant to automatically run on github actions to change the banner. see [main.yml](.github/workflows/main.yml)
 
+
+- for running locally you must have a `.env` file
+- `.env` file should have the following:
+    ```
+    ACCESS_TOKEN=your_access_token_here
+    ```
+- run to install dependencies
+    ```
+    pip install requests python-dotenv
+    ```
+- run 
+    ```
+    python test.py
+    ```
+
 <br>
 
 ## concept art
