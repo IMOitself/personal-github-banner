@@ -1,11 +1,24 @@
-# i got this code from https://docs.github.com/en/graphql/guides/forming-calls-with-graphql
 query($number_of_repos:Int!) {
   viewer {
     name
-     repositories(last: $number_of_repos) {
-       nodes {
-         name
-       }
-     }
-   }
+    repositories(
+      last: $number_of_repos,
+      orderBy:  {
+         field: UPDATED_AT, direction: ASC
+      }
+    ) {
+      nodes {
+        name
+        defaultBranchRef {
+          target {
+            ... on Commit {
+              history {
+                totalCount
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

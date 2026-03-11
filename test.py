@@ -20,6 +20,3 @@ def query_graphql(query, variables=None):
 
 query = Path('graphql/test.graphql').read_text()
 print(query_graphql(query, {"number_of_repos": 3}))
-
-query = Path('graphql/help.graphql').read_text()
-Path("graphql/help-output.json").write_text(json.dumps(query_graphql(query), indent=2))

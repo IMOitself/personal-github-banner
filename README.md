@@ -22,6 +22,8 @@
     ```
     python test.py
     ```
+- **(optional)** for installing autocomplete and intellisense when editing graphql files:
+    <br>install [GraphQL: Language Feature Support](https://open-vsx.org/vscode/item?itemName=GraphQL.vscode-graphql) extension.
 
 <br>
 
