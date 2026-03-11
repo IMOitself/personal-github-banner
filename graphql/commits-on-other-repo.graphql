@@ -1,0 +1,24 @@
+query($cursor: String, $viewerId: ID!) {
+  viewer {
+    repositoriesContributedTo(
+      first: 100,
+      after: $cursor,
+      contributionTypes: [COMMIT]
+    ) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        nameWithOwner
+        defaultBranchRef {
+            target {
+                ... on Commit {
+                    history(author: {id: $viewerId}) { totalCount }
+                }
+            }
+        }
+      }
+    }
+  }
+}
