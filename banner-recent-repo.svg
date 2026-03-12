@@ -1,0 +1,128 @@
+<svg width="680" height="230" viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject x="0" y="0" width="680" height="230">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .banner { 
+          width: 680px;
+          height: 230px; 
+          box-sizing: border-box; 
+          padding: 8px 20px; 
+          display: flex; 
+          flex-direction: column; 
+          justify-items: center;
+          font-family: 'JetBrains Mono', monospace; 
+          color: #F4F4F4;
+          background-color: #2B2D5B;
+        }
+        .label { margin: 8px 0; font-size: 20px; color: #F4F4F4; }
+        .divider { 
+          height: 1px; 
+          width: 100%; 
+          margin: 10px 0;
+          background: linear-gradient(90deg, transparent, #F4F4F4, #F4F4F4, transparent);
+        }
+        .repo-card {
+          background: transparent;
+          padding: 24px;
+          border-radius: 8px;
+          border: 1px solid #f4f4f489;
+          flex: 1;
+          margin-bottom: 8px;
+          display: flex;
+          flex-direction: column;
+        }
+        .repo-header {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .icon {
+          width: 32px;
+          height: 32px;
+          fill: #F4F4F4;
+        }
+        .repo-name {
+          font-size: 20px;
+        }
+        .repo-is-archive {
+          font-size: 16px;
+          border-radius: 20px;
+          padding: 2px 8px;
+          border: 1px solid #EEC444;
+          color: #EEC444;
+        }
+        .repo-body {
+          padding-top: 8px;
+          font-size: 18px;
+          opacity: 0.8;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          flex: 1
+        }
+        .repo-footer {
+          display: flex;
+          align-items: center;
+          gap: 32px;
+        }
+        .repo-language {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          font-size: 18px;
+        }
+        .repo-language-color {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background-color: #DB9E10;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .repo-stars {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 18px;
+        }
+        .star-icon {
+          width: 24px;
+          height: 24px;
+          fill: #F4F4F4;
+        }
+
+      </style>
+
+      <div class="banner">
+        <!-- <div class="divider"/> -->
+        <div class="label">recently updated repository</div>
+        <div class="repo-card">
+          <div class="repo-header">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" x="0" y="-13" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+              <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+            </svg>
+            <div class="repo-name">30-Days-Of-TextEditor</div>
+            <div class="repo-is-archive">Public archive</div>
+          </div>
+          <div class="repo-body">
+            <div class="repo-desc">making an android text editor from scratch in 30 days</div>
+          </div>
+          <div class="repo-footer">
+            <div class="repo-language">
+              <div class="repo-language-color"/> Java
+            </div>
+            <div class="repo-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" y="-12" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              1
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </foreignObject>
+    
+</svg>
