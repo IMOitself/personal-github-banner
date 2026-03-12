@@ -1,7 +1,6 @@
 <div align="center">
 
-## ![output image will be place here soon](https://github.com/IMOitself/personal-github-banner/blob/master/bannner.svg)
-  
+![main banner](banner-main.svg)![recent repo banner](banner-recent-repo.svg)
 </div>
 
 **strictly no vibe coding:D** 
