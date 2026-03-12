@@ -53,22 +53,16 @@
           color: #EEC444;
         }
         .repo-body {
-          padding-top: 12px;
+          padding: 12px 0px;
           font-size: 14px;
           opacity: 0.8;
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
-          line-clamp: 2;
-          flex: 1
         }
         .repo-footer {
           display: flex;
           align-items: center;
           gap: 32px;
           color: rgba(255, 255, 255, 0.8);
-          font-size: 16px; 
+          font-size: 14px; 
         }
         .repo-language {
           display: flex;
@@ -97,7 +91,6 @@
       </style>
 
       <div class="banner">
-        <!-- <div class="divider"/> -->
         <div class="label">recently updated repository</div>
         <div class="repo-card">
           <div class="repo-header">
