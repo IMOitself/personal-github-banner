@@ -19,6 +19,11 @@ def query_graphql(query, variables={}):
 def asDict(s):
     return eval(str(s))
 
+query = Path('graphql/test.graphql').read_text()
+output = query_graphql(query)
+print(output)
+if(True): exit()
+
 overall_commits = 0
 
 # get github id

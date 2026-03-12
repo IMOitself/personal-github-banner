@@ -1,22 +1,13 @@
-query($number_of_repos:Int!) {
+query {
   viewer {
     name
-    repositories(
-      last: $number_of_repos,
-      orderBy:  {
-         field: UPDATED_AT, direction: ASC
-      }
-    ) {
+    avatarUrl
+    repositories(first: 1, orderBy: {field: UPDATED_AT, direction: DESC}) {
       nodes {
         name
-        defaultBranchRef {
-          target {
-            ... on Commit {
-              history {
-                totalCount
-              }
-            }
-          }
+        description
+        licenseInfo {
+          name
         }
       }
     }
