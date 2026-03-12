@@ -25,23 +25,44 @@
           margin-bottom: 8px;
           display: flex;
           flex-direction: column;
+          position: relative;
+          overflow: hidden;
         }
         .repo-header { display: flex; align-items: center; gap: 8px; }
         .icon { width: 24px; height: 24px; fill: #F4F4F4; }
         .repo-name { font-size: 16px; }
         .repo-is-archive { font-size: 12px; border-radius: 20px; padding: 2px 8px; border: 1px solid #EEC444; color: #EEC444; }
-        .repo-body { padding: 12px 0px; font-size: 14px; opacity: 0.8; }
+        .repo-body { padding: 12px 0px; margin-right: 25%; font-size: 14px; opacity: 0.8; }
         .repo-footer { display: flex; align-items: center; gap: 32px; color: rgba(255, 255, 255, 0.8); font-size: 14px; }
         .repo-language { display: flex; align-items: center; gap: 4px; }
         .repo-language-color { width: 14px; height: 14px; border-radius: 50%; background-color: #DB9E10; border: 1px solid rgba(255, 255, 255, 0.3); }
         .repo-stars { display: flex; align-items: center; gap: 4px; }
         .star-icon { width: 18px; height: 18px; fill: #F4F4F4; opacity: 0.8; }
 
+        .sparkline-graph {
+          position: absolute;
+          top: 40%;
+          left: 75%;
+          width: 25%;
+          height: 100%;
+          z-index: 1;
+          opacity: 0.5;
+        }
       </style>
 
       <div class="banner">
         <div class="label">recently updated repository</div>
         <div class="repo-card">
+          <div class="sparkline-graph">
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 200'>
+              <!-- changeable:        _______         _______         _______         _______         _______          -->
+              <!-- base points: 0,100 100,200 200,200 300,200 400,200 500,200 600,200 700,200 800,200 900,200 1000,200 -->
+              <polyline points="0,200 100,200 200,200 300,200 400,200 500,200 600,000 700,200 800,150 900,200 1000,000"
+                        fill="none"
+                        stroke="#1baa33ff"
+                        stroke-width="20" />
+            </svg>
+          </div>
           <div class="repo-header">
             <div class="repo-name">30-Days-Of-TextEditor</div>
             <div class="repo-is-archive">Public archive</div>
