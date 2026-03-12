@@ -16,6 +16,9 @@ def query_graphql(query, variables={}):
     response = requests.post(URL, json={'query': query, 'variables': variables }, headers=headers)
     return response.json()
 
+def asDict(s):
+    return eval(str(s))
+
 overall_commits = 0
 
 # get github id
