@@ -1,22 +1,21 @@
-query($number_of_repos:Int!) {
-  viewer {
-    name
-    repositories(
-      last: $number_of_repos,
-      orderBy:  {
-         field: UPDATED_AT, direction: ASC
-      }
-    ) {
-      nodes {
-        name
-        defaultBranchRef {
-          target {
-            ... on Commit {
-              history {
-                totalCount
+query($viewerId: ID!) {
+  repository(owner: "IMOitself" name: "IMOitself"){
+    nameWithOwner
+    defaultBranchRef {
+      target {
+        ... on Commit {
+            history(author: {id: $viewerId}) { 
+              totalCount
+            }
+            committername: 
+            history(first: 1, author: {id: $viewerId}) { 
+              nodes { 
+                author { 
+                  name
+                  email
+                }
               }
             }
-          }
         }
       }
     }
