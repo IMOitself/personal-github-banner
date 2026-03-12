@@ -6,15 +6,16 @@
           width: 680px;
           height: 230px; 
           box-sizing: border-box; 
-          padding: 8px 20px; 
+          padding: 24px; 
           display: flex; 
           flex-direction: column; 
           justify-items: center;
           font-family: 'JetBrains Mono', monospace; 
           color: #F4F4F4;
           background-color: #2B2D5B;
+          gap: 24px;
         }
-        .label { margin: 8px 0; font-size: 20px; color: #F4F4F4; }
+        .label { font-size: 16px; color: #F4F4F4; }
         .divider { 
           height: 1px; 
           width: 100%; 
@@ -23,7 +24,7 @@
         }
         .repo-card {
           background: transparent;
-          padding: 24px;
+          padding: 16px;
           border-radius: 8px;
           border: 1px solid #f4f4f489;
           flex: 1;
@@ -37,23 +38,23 @@
           gap: 8px;
         }
         .icon {
-          width: 32px;
-          height: 32px;
+          width: 24px;
+          height: 24px;
           fill: #F4F4F4;
         }
         .repo-name {
-          font-size: 20px;
+          font-size: 16px;
         }
         .repo-is-archive {
-          font-size: 16px;
+          font-size: 12px;
           border-radius: 20px;
           padding: 2px 8px;
           border: 1px solid #EEC444;
           color: #EEC444;
         }
         .repo-body {
-          padding-top: 8px;
-          font-size: 18px;
+          padding-top: 12px;
+          font-size: 14px;
           opacity: 0.8;
           overflow: hidden;
           display: -webkit-box;
@@ -66,16 +67,17 @@
           display: flex;
           align-items: center;
           gap: 32px;
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 16px; 
         }
         .repo-language {
           display: flex;
           align-items: center;
           gap: 4px;
-          font-size: 18px;
         }
         .repo-language-color {
-          width: 18px;
-          height: 18px;
+          width: 14px;
+          height: 14px;
           border-radius: 50%;
           background-color: #DB9E10;
           border: 1px solid rgba(255, 255, 255, 0.3);
@@ -83,13 +85,13 @@
         .repo-stars {
           display: flex;
           align-items: center;
-          gap: 8px;
-          font-size: 18px;
+          gap: 4px;
         }
         .star-icon {
-          width: 24px;
-          height: 24px;
+          width: 18px;
+          height: 18px;
           fill: #F4F4F4;
+          opacity: 0.8;
         }
 
       </style>
