@@ -7,23 +7,31 @@
 
 - this project is meant to automatically run on github actions to change the banner. see [main.yml](.github/workflows/main.yml)
 
+<details>
+<summary>
+        
+## running locally
+        
+</summary>
 
-- for running locally you must have a `.env` file
-- `.env` file should have the following:
+- create a `.env` file
+- put this into your `.env` file and change `your_access_token_here` to your access token:
     ```
     ACCESS_TOKEN=your_access_token_here
     ```
-- run to install dependencies
+- run this to install dependencies
     ```
     pip install requests python-dotenv pathlib
     ```
-- run 
+- run the python file
     ```
     python test.py
     ```
 - **(optional)** for installing autocomplete and intellisense when editing graphql files:
     <br>install [GraphQL: Language Feature Support](https://open-vsx.org/vscode/item?itemName=GraphQL.vscode-graphql) extension.
 
+</details>
+    
 <br>
 
 ## concept art
