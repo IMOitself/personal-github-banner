@@ -16,28 +16,7 @@ def query_graphql(query, variables={}):
     response = requests.post(URL, json={'query': query, 'variables': variables }, headers=headers)
     return response.json()
 
-def asDict(s):
-    return eval(str(s))
-
-
 overall_commits = 0
-
-
-names = ["IMOaswell", "IMOitself"]
-
-for name in names:
-    query = "query { user(login: \""+name+"\") { id } }"
-    output = query_graphql(query)
-    id = asDict(output)['data']['user']['id']
-
-    query = Path("graphql/test.graphql").read_text()
-    output = query_graphql(query, {"viewerId": id})
-    print(output)
-
-
-if(True): exit()
-
-
 
 # get github id
 query = "query { viewer { id } }"
