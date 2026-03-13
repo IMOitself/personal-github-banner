@@ -8,7 +8,7 @@ class EditBanner:
         
         # note: crafting a pattern is very difficult, so sadly i auto generate from ai:(
         pattern = r'(<div class="val">\s*<div class="slot-strip">\s*<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*</div>\s*</div>)'
-        replacement = f'\g<1>{overall_commits}\g<2>{overall_commits - 1}\g<3>{overall_commits - 2}\g<4>'
+        replacement = rf'\g<1>{overall_commits}\g<2>{overall_commits - 1}\g<3>{overall_commits - 2}\g<4>'
 
         new_banner_content = re.sub(pattern, replacement, banner_content)
 
