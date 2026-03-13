@@ -1,11 +1,10 @@
 from get_data import GetData
 from edit_banner import EditBanner
 
-# TODO: get values from graphql
-get_data = GetData()
-overall_commits = get_data.get_overall_commits()
+GetData = GetData()
+overall_commits = GetData.get_overall_commits()
 
-print(f"\nOverall Commits: {overall_commits}")
+banner_main = "banner-main.svg"
+banner_recent_repo = "banner-recent-repo.svg"
 
-# TODO: edit banner svg files
-EditBanner.test()
+EditBanner.change_overall_commits(banner_main, overall_commits)
