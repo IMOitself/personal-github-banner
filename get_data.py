@@ -40,3 +40,7 @@ class GetData:
                 overall_commits += int(total_count)
 
         return overall_commits
+    
+    def get_days_streak(self):
+        query = Path('graphql/days-streak.graphql').read_text()
+        return self.query_graphql(query)['data']['viewer']['contributionsCollection']['contributionCalendar']['totalContributions']

@@ -1,0 +1,10 @@
+query {
+  viewer {
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
+        # TODO: get the days streak of the user
+      }
+    }
+  }
+}
