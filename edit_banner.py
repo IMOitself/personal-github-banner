@@ -6,8 +6,11 @@ class EditBanner:
     def change_overall_commits(file_path, overall_commits):
         banner_content = Path(file_path).read_text(encoding='utf-8')
         
-        # TODO: do regex to replace the overall commits section
-        pattern = r''
-        replacement = banner_content
+        # note: crafting a pattern is very difficult, so sadly i auto generate from ai:(
+        pattern = r'(<div class="val">\s*<div class="slot-strip">\s*<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*</div>\s*</div>)'
+        replacement = f'\g<1>{overall_commits}\g<2>{overall_commits - 1}\g<3>{overall_commits - 2}\g<4>'
 
-        Path(file_path).write_text(banner_content, encoding='utf-8')
+        new_banner_content = re.sub(pattern, replacement, banner_content)
+
+        Path(file_path).write_text(new_banner_content, encoding='utf-8')
+        print(f"\nEdited {file_path} overall commits to {overall_commits}")
