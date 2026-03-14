@@ -9,5 +9,30 @@ permissions:
   contents: write
 
 jobs:
-  runs-on: ubuntu-latest
+  update-svg:
+    runs-on: ubuntu-latest
 
+    steps:
+      - name: checkout this repo
+        uses: actions/checkout@4
+
+      - name: setup python
+        uses: actions/setup-python@v6.2.0
+        with:
+          python-version: '3.12'
+      
+      - name: install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: run >:D
+        run: python main.py
+
+      - name: commit and push
+        run: |
+          git config user.name "IMO's Bot >:D"
+          git config user.email "imo@bot.angryface"
+          git add .
+          git commit -m "bot: update banner" || echo "no changes to commit :]"
+          git push
