@@ -1,11 +1,12 @@
 <div align="center">
 
 ![main banner](banner-main.svg)![recent repo banner](banner-recent-repo.svg)
+
+## strictly no vibe coding:D 
+
 </div>
 
-**strictly no vibe coding:D** 
-
-- this project is meant to automatically run on github actions to change the banner. see [main.yml](.github/workflows/main.yml)
+made from scratch! my own personalized banners for displaying anything github related to boost productivity
 
 <details>
 <summary>
@@ -30,13 +31,14 @@
 - **(optional)** for installing autocomplete and intellisense when editing graphql files:
     <br>install [GraphQL: Language Feature Support](https://open-vsx.org/vscode/item?itemName=GraphQL.vscode-graphql) extension.
 
-</details>
-    
-<br>
-
-## concept art
+</details> 
 <details>
-    <summary>click to view</summary>
-    <img height="300" src="https://github.com/user-attachments/assets/bf5726d8-0f0e-4c3f-9bd2-5b7003ec2cdf" alt="banner">
+<summary>
+    
+## concept art
+            
+</summary>
+    
+<img height="300" src="https://github.com/user-attachments/assets/bf5726d8-0f0e-4c3f-9bd2-5b7003ec2cdf" alt="banner">
 </details>
 
