@@ -63,11 +63,26 @@ class GetData:
             contribution_weeks = self.query_graphql(query, variables)['data']['viewer']['contributionsCollection']['contributionCalendar']['weeks']
             contribution_weeks.reverse() # current week first
 
+            isToday = True
+            isTodayHasNoContribution = False
+
             for week in contribution_weeks:
                 days = week['contributionDays']
                 days.reverse() # latest day first
                 
+                
                 for day in days:
                     contribution = day['contributionCount']
-                    if (contribution == 0): return days_streak
+                    
+                    # skip if today has no contribution
+                    # to still count days_streaks before this day
+                    if (isToday) and (contribution == 0): 
+                        isTodayHasNoContribution = True
+                        continue
+                    isToday = False
+                    # -_-_-_-_-_-_-_-_-_-_-_
+
+                    isStreakPaused = (days_streak > 0) and (isTodayHasNoContribution)
+
+                    if (contribution == 0): return (days_streak, isStreakPaused)
                     days_streak += 1
