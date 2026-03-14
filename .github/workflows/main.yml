@@ -29,6 +29,8 @@ jobs:
 
       - name: run >:D
         run: python main.py
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: commit and push
         run: |
