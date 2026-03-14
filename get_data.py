@@ -20,6 +20,7 @@ class GetData:
     
     def get_viewer_id(self):
         query = "query { viewer { id } }"
+        print(self.query_graphql(query))
         return self.query_graphql(query)['data']['viewer']['id']
     
     def get_overall_commits(self):
