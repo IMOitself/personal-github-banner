@@ -9,4 +9,4 @@ banner_main = "banner-main.svg"
 banner_recent_repo = "banner-recent-repo.svg"
 
 EditBanner.change_overall_commits(banner_main, overall_commits)
-print("\ndays streak:", days_streak)
+EditBanner.change_days_streak(banner_main, days_streak)
