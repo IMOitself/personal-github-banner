@@ -1,15 +1,7 @@
 query {
   viewer {
-    name
-    avatarUrl
-    repositories(first: 1, orderBy: {field: UPDATED_AT, direction: DESC}) {
-      nodes {
-        name
-        description
-        licenseInfo {
-          name
-        }
-      }
+    contributionsCollection {
+      contributionYears
     }
   }
 }

@@ -1,3 +1,4 @@
+from datetime import datetime
 import os
 import requests
 import json
@@ -42,5 +43,33 @@ class GetData:
         return overall_commits
     
     def get_days_streak(self):
-        query = Path('graphql/days-streak.graphql').read_text()
-        return self.query_graphql(query)['data']['viewer']['contributionsCollection']['contributionCalendar']['totalContributions']
+        days_streak = 0
+        is_streak_active = True
+
+        query = "query { viewer { contributionsCollection { contributionYears } } }"
+        contribution_years = self.query_graphql(query)['data']['viewer']['contributionsCollection']['contributionYears']
+
+        # TODO: check if latest contributed year is under current year. return 0 immediately
+
+        for contribution_year in contribution_years:
+            start = f"{contribution_year}-01-01T00:00:00Z"
+            end = f"{contribution_year}-12-31T23:59:59Z"
+
+            is_future_date = datetime.strptime(end, "%Y-%m-%dT%H:%M:%SZ") > datetime.now()
+            date_today = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+            if(is_future_date): end = date_today
+
+            query = Path('graphql/days-streak.graphql').read_text()
+            variables = {"start": start, "end": end}
+            contribution_weeks = self.query_graphql(query, variables)['data']['viewer']['contributionsCollection']['contributionCalendar']['weeks']
+            contribution_weeks.reverse() # current week first
+
+            for week in contribution_weeks:
+                days = week['contributionDays']
+                days.reverse() # latest day first
+                
+                for day in days:
+                    contribution = day['contributionCount']
+                    if (contribution == 0):
+                        return days_streak
+                    days_streak += 1

@@ -1,9 +1,13 @@
-query {
+# reference: https://github.com/DenverCoder1/github-readme-streak-stats
+query($start: DateTime!, $end: DateTime!) {
   viewer {
-    contributionsCollection {
+    contributionsCollection(from: $start, to: $end) {
       contributionCalendar {
-        totalContributions
-        # TODO: get the days streak of the user
+        weeks {
+          contributionDays {
+            contributionCount
+          }
+        }
       }
     }
   }
