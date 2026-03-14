@@ -12,6 +12,8 @@ permissions:
 jobs:
   update-svg:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Manila
 
     steps:
       - name: checkout this repo
