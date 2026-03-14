@@ -44,7 +44,6 @@ class GetData:
     
     def get_days_streak(self):
         days_streak = 0
-        is_streak_active = True
 
         query = "query { viewer { contributionsCollection { contributionYears } } }"
         contribution_years = self.query_graphql(query)['data']['viewer']['contributionsCollection']['contributionYears']
@@ -70,6 +69,5 @@ class GetData:
                 
                 for day in days:
                     contribution = day['contributionCount']
-                    if (contribution == 0):
-                        return days_streak
+                    if (contribution == 0): return days_streak
                     days_streak += 1
