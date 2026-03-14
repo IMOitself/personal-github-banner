@@ -31,11 +31,16 @@ jobs:
         run: python main.py
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      
+      - name: get commit message
+        run: |
+          COMMITMSG=$(python .github/workflows/commit-msg.py)
+          echo "COMMIT_MSG=$COMMITMSG" >> $GITHUB_ENV
 
       - name: commit and push
         run: |
           git config user.name "IMO's Bot >:D"
           git config user.email "imo@bot.angryface"
           git add .
-          git commit -m "bot: update banner" || echo "no changes to commit :]"
+          git commit -m "${{ env.COMMIT_MSG }}" || echo "no changes to commit :]"
           git push
