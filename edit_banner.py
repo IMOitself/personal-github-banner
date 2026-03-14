@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 from pathlib import Path
 
 class EditBanner:
@@ -7,6 +8,15 @@ class EditBanner:
         banner_content = Path(file_path).read_text(encoding='utf-8')
         new_banner_content = re.sub(regex_pattern, replacement, banner_content)
         Path(file_path).write_text(new_banner_content, encoding='utf-8')
+
+    
+    def change_date_to_today(file_path):
+        date_today = datetime.now().strftime("%B %d, %Y")
+        regex_pattern = r'(<p class="date">)MARCH 5, 2026(</p>)'
+        replacement = rf'\g<1>{date_today}\g<2>'
+
+        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        print(f"\nEdited {file_path} date to {date_today}")
         
     
     def change_overall_commits(file_path, overall_commits):
