@@ -1,0 +1,13 @@
+name: Update Banners
+
+on:
+  schedule:
+    # every 2 hours everyday:D
+    - cron: 0 */2 * * *
+
+permissions:
+  contents: write
+
+jobs:
+  runs-on: ubuntu-latest
+
