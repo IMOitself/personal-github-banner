@@ -16,4 +16,10 @@ EditBanner.change_recent_repo_name(banner_recent_repo, recent_repo['name'])
 EditBanner.change_recent_repo_description(banner_recent_repo, recent_repo['description'])
 EditBanner.change_recent_repo_language(banner_recent_repo, recent_repo['primaryLanguage'])
 EditBanner.change_recent_repo_is_archive(banner_recent_repo, recent_repo['isArchived'])
-EditBanner.change_recent_repo_updated_at(banner_recent_repo, recent_repo['pushedAt'])
+
+# this will run on github actions in scheduled time
+# the change_recent_repo_updated_at will always update the banner
+# and will make the github actions always commit
+# TODO: find a different way to display last update date
+# EditBanner.change_recent_repo_updated_at(banner_recent_repo, recent_repo['pushedAt'])
+EditBanner.change_recent_repo_last_update_date(banner_recent_repo, recent_repo['pushedAt'])

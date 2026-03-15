@@ -109,4 +109,7 @@ class EditBanner:
 
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo "updated at" to "{display_updated_at}"')
-
+    
+    def change_recent_repo_last_update_date(file_path, updated_at):
+        # TODO: show what time of day it was updated e.g 5:00 PM
+        pass
