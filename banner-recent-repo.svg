@@ -71,7 +71,7 @@
           </div>
           <div class="repo-header">
             <div class="repo-name">personal-github-banner</div>
-            <div class="repo-is-archive">Public archive</div>
+            <div class="repo-is-archive" style="opacity: 0;">Public archive</div>
           </div>
           <div class="repo-body">
             <div class="repo-desc">relearning github graphql and python. March 2026 project.</div>

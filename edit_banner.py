@@ -37,6 +37,7 @@ class EditBanner:
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f"\nEdited {file_path} days streak to {days_streak}")
 
+
     def change_recent_repo_name(file_path, name):
         regex_pattern = r'(<div class="repo-name">)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{name}\g<2>'
@@ -44,6 +45,7 @@ class EditBanner:
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo name to "{name}"')
     
+
     def change_recent_repo_description(file_path, description):
         regex_pattern = r'(<div class="repo-desc">)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{description}\g<2>'
@@ -51,6 +53,7 @@ class EditBanner:
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo description to "{description}"')
     
+
     def change_recent_repo_language(file_path, language):
         language_name = language['name']
         language_color = language['color']
@@ -62,3 +65,14 @@ class EditBanner:
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo language to "{language}"')
 
+
+    def change_recent_repo_is_archive(file_path, is_archive):
+        regex_pattern = r'(<div class="repo-is-archive")[>\s\S]*?(>[\s\S]*?</div>)'
+        visibility = 'style="opacity: 0;"' if not is_archive else ''
+        replacement = rf'\g<1>{visibility}\g<2>'
+
+        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        if(is_archive):
+            print(f'\nEdited {file_path} recent repo to show is-archived')
+        else:
+            print(f'\nEdited {file_path} recent repo to hide is-archived')
