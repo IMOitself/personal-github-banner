@@ -1,6 +1,6 @@
 import re
-from datetime import datetime
 from pathlib import Path
+from datetime import datetime, timezone
 
 class EditBanner:
 
@@ -78,8 +78,9 @@ class EditBanner:
             print(f'\nEdited {file_path} recent repo to hide is-archived')
     
     def change_recent_repo_updated_at(file_path, updated_at):
-        converted_date = datetime.strptime(updated_at, "%Y-%m-%dT%H:%M:%SZ")
-        time_diff = datetime.now() - converted_date
+        # i hate calculating time >:(
+        converted_date = datetime.strptime(updated_at, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc).astimezone()
+        time_diff = datetime.now().astimezone() - converted_date
 
         days_diff = time_diff.days
         seconds_diff = time_diff.seconds
