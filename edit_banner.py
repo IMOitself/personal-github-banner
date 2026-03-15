@@ -68,7 +68,7 @@ class EditBanner:
 
     def change_recent_repo_is_archive(file_path, is_archive):
         regex_pattern = r'(<div class="repo-is-archive")[>\s\S]*?(>[\s\S]*?</div>)'
-        visibility = 'style="opacity: 0;"' if not is_archive else ''
+        visibility = ' style="opacity: 0;"' if not is_archive else ''
         replacement = rf'\g<1>{visibility}\g<2>'
 
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
