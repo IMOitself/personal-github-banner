@@ -20,7 +20,6 @@ class GetData:
     
     def get_viewer_id(self):
         query = "query { viewer { id } }"
-        print(self.query_graphql(query))
         return self.query_graphql(query)['data']['viewer']['id']
     
     def get_overall_commits(self):
@@ -87,3 +86,15 @@ class GetData:
 
                     if (contribution == 0): return (days_streak, isStreakPaused)
                     days_streak += 1
+    
+    def get_recent_repo(self):
+        query = Path('graphql/recent_repo.graphql').read_text()
+        repo = self.query_graphql(query)['data']['viewer']['repositories']['nodes'][0]
+        return {
+            "name": repo['name'],
+            "isArchived": repo['isArchived'],
+            "description": repo['description'],
+            "primaryLanguage": repo['primaryLanguage']['name'],
+            "primaryLanguageColor": repo['primaryLanguage']['color'],
+            "updatedAt": repo['updatedAt']
+        }
