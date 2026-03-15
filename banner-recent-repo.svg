@@ -30,7 +30,7 @@
         }
         .repo-header { display: flex; align-items: center; gap: 8px; }
         .icon { width: 24px; height: 24px; fill: #F4F4F4; }
-        .repo-name { font-size: 16px; }
+        .repo-name { font-size: 16px; font-weight: bold; }
         .repo-is-archive { font-size: 12px; border-radius: 20px; padding: 2px 8px; border: 1px solid #EEC444; color: #EEC444; }
         .repo-body { font-size: 14px; padding: 12px 0px; margin-right: 25%; opacity: 0.8; }
         .repo-footer { font-size: 12px; display: flex; align-items: center; gap: 32px; color: rgba(255, 255, 255, 0.8); }
@@ -86,7 +86,7 @@
               </svg>
               1
             </div> -->
-            <div class="repo-updated-at">Today at 01:26 PM</div>
+            <div class="repo-updated-at">Today at 02:06 PM</div>
           </div>
         </div>
 
