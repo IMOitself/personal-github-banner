@@ -92,15 +92,15 @@ class EditBanner:
         hours_diff = minutes_diff // 60
 
         if (years_diff > 0):
-            display_updated_at = f"Updated {years_diff} year ago"
+            display_updated_at = f"Updated {years_diff} year{'s' if years_diff > 1 else ''} ago"
         elif (months_diff > 0):
-            display_updated_at = f"Updated {months_diff} month ago"
+            display_updated_at = f"Updated {months_diff} month{'s' if months_diff > 1 else ''} ago"
         elif (weeks_diff > 0):
-            display_updated_at = f"Updated {weeks_diff} week ago"
+            display_updated_at = f"Updated {weeks_diff} week{'s' if weeks_diff > 1 else ''} ago"
         elif (hours_diff > 0):
-            display_updated_at = f"Updated {hours_diff} hour ago"
+            display_updated_at = f"Updated {hours_diff} hour{'s' if hours_diff > 1 else ''} ago"
         elif (minutes_diff > 0):
-            display_updated_at = f"Updated {minutes_diff} minute ago"
+            display_updated_at = f"Updated {minutes_diff} minute{'s' if minutes_diff > 1 else ''} ago"
         else:
             display_updated_at = "Updated just now"
 
