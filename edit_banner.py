@@ -42,5 +42,12 @@ class EditBanner:
         replacement = rf'\g<1>{name}\g<2>'
 
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
-        print(f"\nEdited {file_path} recent repo name to {name}")
+        print(f'\nEdited {file_path} recent repo name to "{name}"')
+    
+    def change_recent_repo_description(file_path, description):
+        regex_pattern = r'(<div class="repo-desc">)[\s\S]*?(</div>)'
+        replacement = rf'\g<1>{description}\g<2>'
+
+        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        print(f'\nEdited {file_path} recent repo description to "{description}"')
 
