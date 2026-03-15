@@ -118,7 +118,7 @@ class EditBanner:
 
         display_date = last_update_date # ex. March 15
         if(last_update_date == today): display_date = "Today at "
-        display_date = display_date + converted_date.strftime("%I:%M %p")
+        display_date = display_date + converted_date.strftime("%I %p")
 
         regex_pattern = r'(<div class="repo-updated-at">)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{display_date}\g<2>'
