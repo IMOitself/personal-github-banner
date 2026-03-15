@@ -50,4 +50,15 @@ class EditBanner:
 
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo description to "{description}"')
+    
+    def change_recent_repo_language(file_path, language):
+        language_name = language['name']
+        language_color = language['color']
+        
+        # note: ngl the pattern is from ai again :(
+        regex_pattern = r'(<div class="repo-language">[\s\S]*?<div class="repo-language-color" style="background-color:\s*)[^;"]+(;"\s*/>\s*)[\s\S]*?(\s*</div>)'
+        replacement = rf'\g<1>{language_color}\g<2>{language_name}\g<3>'
+
+        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        print(f'\nEdited {file_path} recent repo language to "{language}"')
 

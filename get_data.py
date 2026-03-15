@@ -90,11 +90,11 @@ class GetData:
     def get_recent_repo(self):
         query = Path('graphql/recent_repo.graphql').read_text()
         repo = self.query_graphql(query)['data']['viewer']['repositories']['nodes'][0]
-        return {
-            "name": repo['name'],
-            "isArchived": repo['isArchived'],
-            "description": repo['description'],
-            "primaryLanguage": repo['primaryLanguage']['name'],
-            "primaryLanguageColor": repo['primaryLanguage']['color'],
-            "updatedAt": repo['updatedAt']
-        }
+        # name
+        # isArchived
+        # description
+        # primaryLanguage
+        #   name
+        #   color
+        # updatedAt
+        return repo

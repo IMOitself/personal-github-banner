@@ -35,7 +35,7 @@
         .repo-body { font-size: 14px; padding: 12px 0px; margin-right: 25%; opacity: 0.8; }
         .repo-footer { font-size: 12px; display: flex; align-items: center; gap: 32px; color: rgba(255, 255, 255, 0.8); }
         .repo-language { display: flex; align-items: center; gap: 4px; }
-        .repo-language-color { width: 14px; height: 14px; border-radius: 50%; background-color: #DB9E10; border: 1px solid rgba(255, 255, 255, 0.3); }
+        .repo-language-color { width: 14px; height: 14px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.3); }
         .repo-stars { display: flex; align-items: center; gap: 4px; }
         .star-icon { width: 18px; height: 18px; fill: #F4F4F4; opacity: 0.8; }
 
@@ -78,7 +78,7 @@
           </div>
           <div class="repo-footer">
             <div class="repo-language">
-              <div class="repo-language-color"/> Java
+              <div class="repo-language-color" style="background-color: #3572A5;"/> Python
             </div>
             <!-- <div class="repo-stars">
               <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" y="-12" viewBox="0 0 16 16" version="1.1" width="16" height="16">
