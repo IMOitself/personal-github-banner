@@ -86,9 +86,7 @@
               </svg>
               1
             </div> -->
-            <div class="repo-last-date">
-              Updated 2 minutes ago
-            </div>
+            <div class="repo-updated-at">Updated 8 hour ago</div>
           </div>
         </div>
 

@@ -76,3 +76,36 @@ class EditBanner:
             print(f'\nEdited {file_path} recent repo to show is-archived')
         else:
             print(f'\nEdited {file_path} recent repo to hide is-archived')
+    
+    def change_recent_repo_updated_at(file_path, updated_at):
+        converted_date = datetime.strptime(updated_at, "%Y-%m-%dT%H:%M:%SZ")
+        time_diff = datetime.now() - converted_date
+
+        days_diff = time_diff.days
+        seconds_diff = time_diff.seconds
+
+        years_diff = days_diff // 365
+        months_diff = days_diff // 30
+        weeks_diff = days_diff // 7
+        minutes_diff = seconds_diff // 60
+        hours_diff = minutes_diff // 60
+
+        if (years_diff > 0):
+            display_updated_at = f"Updated {years_diff} year ago"
+        elif (months_diff > 0):
+            display_updated_at = f"Updated {months_diff} month ago"
+        elif (weeks_diff > 0):
+            display_updated_at = f"Updated {weeks_diff} week ago"
+        elif (hours_diff > 0):
+            display_updated_at = f"Updated {hours_diff} hour ago"
+        elif (minutes_diff > 0):
+            display_updated_at = f"Updated {minutes_diff} minute ago"
+        else:
+            display_updated_at = "Updated just now"
+
+        regex_pattern = r'(<div class="repo-updated-at">)[\s\S]*?(</div>)'
+        replacement = rf'\g<1>{display_updated_at}\g<2>'
+
+        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        print(f'\nEdited {file_path} recent repo "updated at" to "{display_updated_at}"')
+

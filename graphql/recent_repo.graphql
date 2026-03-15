@@ -9,7 +9,8 @@ query {
           name
           color
         }
-        updatedAt
+        pushedAt
+        
       }
     }
   }
