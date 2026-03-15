@@ -37,3 +37,10 @@ class EditBanner:
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f"\nEdited {file_path} days streak to {days_streak}")
 
+    def change_recent_repo_name(file_path, name):
+        regex_pattern = r'(<div class="repo-name">)[\s\S]*?(</div>)'
+        replacement = rf'\g<1>{name}\g<2>'
+
+        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        print(f"\nEdited {file_path} recent repo name to {name}")
+
