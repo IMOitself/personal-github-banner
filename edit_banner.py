@@ -144,7 +144,7 @@ class EditBanner:
         commit_changes = []
         for additions, deletions in five_commits_additions_and_deletions:
             change = additions + deletions
-            commit_changes.append(change ** 0.5)
+            commit_changes.append(change)
         
         max_commit_change = max(commit_changes)
         # prevent crashing if its 0
