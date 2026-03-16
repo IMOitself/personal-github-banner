@@ -130,7 +130,7 @@ class EditBanner:
         am_pm = converted_date.strftime("%p").lower()
         display_date = display_date + " " + str(hour) + am_pm
 
-        regex_pattern = r'(<div class="repo-updated-at">)[\s\S]*?(</div>)'
+        regex_pattern = r'(<div class="repo-updated-at">[\s\S]*?<svg[\s\S]*?</svg>)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{display_date}\g<2>'
 
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
