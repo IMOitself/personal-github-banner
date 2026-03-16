@@ -151,11 +151,13 @@ class EditBanner:
         combined_points = f'0,200 100,200 200,{y_points[4]} 300,200 400,{y_points[3]} 500,200 600,{y_points[2]} 700,200 800,{y_points[1]} 900,200 1000,{y_points[0]}'
         
         sparkline_svg = f"""
+            <!-- DO NOT MODIFY THIS SVG:D. any edit will be overwritten -->
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 200'>
             <defs>
               <linearGradient id="spikeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#90fe92ff" />
-                <stop offset="50%" stop-color="#10cd4fff" />
+                <stop offset="10%" stop-color="#90fe92ff" />
+                <stop offset="60%" stop-color="#90fe92ff" />
+                <stop offset="80%" stop-color="#0f9657ff" />
               </linearGradient>
             </defs>
               <polyline points="{combined_points}"
