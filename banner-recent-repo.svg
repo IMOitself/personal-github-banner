@@ -59,10 +59,9 @@
               <linearGradient id="spikeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stop-color="#90fe92ff" />
                 <stop offset="50%" stop-color="#10cd4fff" />
-                <stop offset="100%" stop-color="#10cd4fff" />
               </linearGradient>
             </defs>
-              <polyline points="0,200 100,200 200,0 300,200 400,170 500,200 600,140 700,200 800,160 900,200 1000,170"
+              <polyline points="0,200 100,200 200,177 300,200 400,184 500,200 600,188 700,200 800,0 900,200 1000,200"
                         fill="none"
                         stroke="url(#spikeGradient)"
                         stroke-width="20" />
@@ -85,7 +84,7 @@
               </svg>
               1
             </div> -->
-            <div class="repo-updated-at">Today at 9am</div>
+            <div class="repo-updated-at">Today at 11am</div>
           </div>
         </div>
 
