@@ -2,8 +2,8 @@ name: Update Banners
 
 on:
   schedule:
-    # every 2 hours everyday:D
-    - cron: 0 */2 * * *
+    # every hour everyday:D
+    - cron: 0 * * * *
   workflow_dispatch:
 
 permissions:
