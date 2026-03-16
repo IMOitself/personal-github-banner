@@ -63,7 +63,7 @@
                 <stop offset="80%" stop-color="#0f9657ff" />
               </linearGradient>
             </defs>
-              <polyline points="0,200 50,200 100,177 150,200 200,184 250,200 300,188 350,200 400,0 450,200 500,173 550,200 600,183 650,200 700,181 750,200 800,162 850,200 900,173 950,200 1000,173"
+              <polyline points="0,200 50,200 100,177 150,200 200,155 250,200 300,155 350,200 400,0 450,200 500,144 550,200 600,133 650,200 700,177 750,200 800,188 850,200 900,177 950,200 1000,177"
                         fill="none"
                         stroke="url(#spikeGradient)"
                         stroke-width="20"
@@ -72,15 +72,15 @@
             </svg>
         </div>
           <div class="repo-header">
-            <div class="repo-name">personal-github-banner</div>
+            <div class="repo-name">IMOitself</div>
             <div class="repo-is-archive" style="opacity: 0;">Public archive</div>
           </div>
           <div class="repo-body">
-            <div class="repo-desc">relearning github graphql and python. March 2026 project.</div>
+            <div class="repo-desc">my bio :D</div>
           </div>
           <div class="repo-footer">
             <div class="repo-language" style="display: none;">
-              <div class="repo-language-color" style="background-color: #000000;"/> Unknown
+              <div class="repo-language-color" style="background-color: #000000;"/> idk
             </div>
             <!-- <div class="repo-stars">
               <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" y="-12" viewBox="0 0 16 16" version="1.1" width="16" height="16">
