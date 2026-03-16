@@ -9,4 +9,4 @@ if(military_hour > 5 and military_hour < 19):
 else:
     current_hour = f"🌘 {current_hour}{am_pm}"
 
-print(f"bot: {current_hour} - update banner")
+print(f"bot: {current_hour} - update banner :D")

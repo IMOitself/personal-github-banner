@@ -41,8 +41,8 @@ jobs:
 
       - name: commit and push
         run: |
-          git config user.name "IMO's Bot >:D"
-          git config user.email "imo@bot.angryface"
+          git config user.name "IMO's Bot"
+          git config user.email "imo@bot.happyface"
           git add .
           git commit -m "${{ env.COMMIT_MSG }}" || echo "no changes to commit :]"
           git push
