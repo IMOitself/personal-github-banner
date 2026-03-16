@@ -143,9 +143,12 @@ class EditBanner:
 
         commit_changes = []
         for additions, deletions in five_commits_additions_and_deletions:
-            commit_changes.append(additions + deletions)
+            change = additions + deletions
+            commit_changes.append(change ** 0.5)
         
         max_commit_change = max(commit_changes)
+        # prevent crashing if its 0
+        if max_commit_change == 0: max_commit_change = 1
 
         for commit_change in commit_changes:
             percentage = commit_change / max_commit_change
