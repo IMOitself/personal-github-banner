@@ -146,9 +146,13 @@ class EditBanner:
             percentage = commit_change / max_commit_change
             y_point = 200 - (percentage * 200)
             y_points.append(int(y_point))
+        
+        y_points.reverse() # latest commit will be at last
 
-        # flat line for about 100 points, also cut the end of the line as if its going straight upwards
-        combined_points = f'0,200 100,200 200,{y_points[4]} 300,200 400,{y_points[3]} 500,200 600,{y_points[2]} 700,200 800,{y_points[1]} 900,200 1000,{y_points[0]}'
+        # start with a flat line for about 50. 
+        # also cut the end of the line as if its going straight upwards.
+        combined_points = f'0,200 50,200 100,{y_points[0]} 150,200 200,{y_points[1]} 250,200 300,{y_points[2]} 350,200 400,{y_points[3]} 450,200 500,{y_points[4]} '
+        combined_points += f'550,200 600,{y_points[5]} 650,200 700,{y_points[6]} 750,200 800,{y_points[7]} 850,200 900,{y_points[8]} 950,200 1000,{y_points[9]}'
         
         sparkline_svg = f"""
             <!-- DO NOT MODIFY THIS SVG:D. any edit will be overwritten -->

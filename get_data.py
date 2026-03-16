@@ -109,6 +109,6 @@ class GetData:
         for commit in commits:
             if(commit['parents']['totalCount'] > 1): continue # exclude merge commits
             commit_additions_and_deletions.append((commit['additions'], commit['deletions']))
-            if(i == 5): break
+            if(i == 10): break
             i += 1
         return commit_additions_and_deletions
