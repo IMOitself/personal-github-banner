@@ -5,8 +5,11 @@ query ($viewerId: ID!) {
         defaultBranchRef {
             target {
                 ... on Commit {
-                    history(author: {id: $viewerId}, first: 5) { 
+                    history(author: {id: $viewerId}, first: 30) { 
                        nodes {
+                        parents {
+                          totalCount
+                        }
                         deletions
                         additions
                        }

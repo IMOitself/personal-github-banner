@@ -105,6 +105,10 @@ class GetData:
         commits = self.query_graphql(query, {"viewerId": self.viewerId})['data']['viewer']['repositories']['nodes'][0]['defaultBranchRef']['target']['history']['nodes']
 
         commits_additions_and_deletions = []
+        i = 1
         for commit in commits:
+            if(commit['parents']['totalCount'] > 1): continue # exclude merge commits
             commits_additions_and_deletions.append((commit['additions'], commit['deletions']))
+            if(i == 5): break
+            i += 1
         return commits_additions_and_deletions
