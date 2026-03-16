@@ -55,12 +55,17 @@ class EditBanner:
     
 
     def change_recent_repo_language(file_path, language):
-        language_name = language['name']
-        language_color = language['color']
+        if(language == None):
+            language_name = "idk"
+            language_color = "#000000"
+        else:
+            language_name = language['name']
+            language_color = language['color']
         
-        # note: ngl the pattern is from ai again :(
-        regex_pattern = r'(<div class="repo-language">[\s\S]*?<div class="repo-language-color" style="background-color:\s*)[^;"]+(;"\s*/>\s*)[\s\S]*?(\s*</div>)'
-        replacement = rf'\g<1>{language_color}\g<2>{language_name}\g<3>'
+        is_hidden = ' style="display: none;"' if language == None else ''
+        
+        regex_pattern = r'(<div class="repo-language")[\s\S]*?(>[\s\S]*?<div class="repo-language-color" style="background-color:\s*)[^;"]+(;"\s*/>\s*)[\s\S]*?(\s*</div>)'
+        replacement = rf'\g<1>{is_hidden}\g<2>{language_color}\g<3>{language_name}\g<4>'
 
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo language to "{language}"')
