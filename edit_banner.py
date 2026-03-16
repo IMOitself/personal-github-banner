@@ -163,7 +163,9 @@ class EditBanner:
               <polyline points="{combined_points}"
                         fill="none"
                         stroke="url(#spikeGradient)"
-                        stroke-width="20" />
+                        stroke-width="20"
+                        stroke-linejoin="round"
+                        stroke-linecap="round" />
             </svg>
         """
 
