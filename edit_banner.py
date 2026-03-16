@@ -155,6 +155,9 @@ class EditBanner:
             y_point = 200 - (percentage * 200)
             y_points.append(int(y_point))
         
+        if(len(y_points) < 10): 
+            y_points = [200] * (10 - len(y_points)) + y_points
+            
         y_points.reverse() # latest commit will be at last
 
         # start with a flat line for about 50. 
