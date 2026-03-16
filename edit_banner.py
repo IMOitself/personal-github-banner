@@ -12,7 +12,7 @@ class EditBanner:
     
     def change_date_to_today(file_path):
         date_today = datetime.now().strftime("%B %d, %Y")
-        regex_pattern = r'(<p class="date">)MARCH 5, 2026(</p>)'
+        regex_pattern = r'(<p class="date">)[\s\S]*?(</p>)'
         replacement = rf'\g<1>{date_today}\g<2>'
 
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
