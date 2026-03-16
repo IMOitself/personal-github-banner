@@ -100,15 +100,15 @@ class GetData:
         repo['lastUpdateDate'] = repo['defaultBranchRef']['target']['history']['nodes'][0]['committedDate']
         return repo
     
-    def get_recent_repo_5_commits_additions_and_deletions(self):
-        query = Path('graphql/recent_repo_5_commits.graphql').read_text()
+    def get_recent_repo_commit_additions_and_deletions(self):
+        query = Path('graphql/recent_repo_commits.graphql').read_text()
         commits = self.query_graphql(query, {"viewerId": self.viewerId})['data']['viewer']['repositories']['nodes'][0]['defaultBranchRef']['target']['history']['nodes']
 
-        commits_additions_and_deletions = []
+        commit_additions_and_deletions = []
         i = 1
         for commit in commits:
             if(commit['parents']['totalCount'] > 1): continue # exclude merge commits
-            commits_additions_and_deletions.append((commit['additions'], commit['deletions']))
+            commit_additions_and_deletions.append((commit['additions'], commit['deletions']))
             if(i == 5): break
             i += 1
-        return commits_additions_and_deletions
+        return commit_additions_and_deletions
