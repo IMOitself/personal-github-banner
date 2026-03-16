@@ -89,12 +89,13 @@ class GetData:
     
     def get_recent_repo(self):
         query = Path('graphql/recent_repo.graphql').read_text()
-        repo = self.query_graphql(query)['data']['viewer']['repositories']['nodes'][0]
+        repo = self.query_graphql(query, {"viewerId": self.viewerId})['data']['viewer']['repositories']['nodes'][0]
         # name
         # isArchived
         # description
         # primaryLanguage
         #   name
         #   color
-        # updatedAt
+
+        repo['lastUpdateDate'] = repo['defaultBranchRef']['target']['history']['nodes'][0]['committedDate']
         return repo

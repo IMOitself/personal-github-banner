@@ -1,4 +1,4 @@
-query {
+query ($viewerId: ID!) {
   viewer {
     repositories(first: 1, orderBy: {field: UPDATED_AT, direction: DESC}) {
       nodes {
@@ -9,8 +9,17 @@ query {
           name
           color
         }
-        pushedAt
-        
+        defaultBranchRef {
+            target {
+                ... on Commit {
+                    history(author: {id: $viewerId}, first: 1) { 
+                       nodes {
+                        committedDate
+                       }
+                    }
+                }
+            }
+        }
       }
     }
   }
