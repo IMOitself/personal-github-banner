@@ -30,10 +30,10 @@ class EditBanner:
 
     def change_days_streak(file_path, days_streak, isStreakPaused):
         # note: ngl the pattern is from ai again :(
-        regex_pattern = r'(<div class="val">\s*)<div class="slot-strip"[^>]*>(\s*<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*</div>\s*</div>)'
         style = ' style="opacity: 0.5;"' if isStreakPaused else ''
-        replacement = rf'\g<1><div class="slot-strip"{style}>\g<2>{days_streak:,}\g<3>{days_streak - 1:,}\g<4>'
-
+        regex_pattern = r'(<div class="days_streak")[\s\S]*?(>[\s\S]*?<div class="slot-strip">[\s\S]*?<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*</div>\s*</div>)'
+        replacement = rf'\g<1>{style}\g<2>{days_streak:,}\g<3>{days_streak - 1:,}\g<4>'
+        
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f"\nEdited {file_path} days streak to {days_streak}")
 
@@ -77,6 +77,7 @@ class EditBanner:
         else:
             print(f'\nEdited {file_path} recent repo to hide is-archived')
     
+
     def change_recent_repo_updated_at(file_path, updated_at):
         # i hate calculating time >:(
         converted_date = datetime.strptime(updated_at, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc).astimezone()
@@ -110,6 +111,7 @@ class EditBanner:
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo "updated at" to "{display_updated_at}"')
     
+
     def change_recent_repo_last_update_date(file_path, updated_at):
         converted_date = datetime.strptime(updated_at, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc).astimezone()
 
