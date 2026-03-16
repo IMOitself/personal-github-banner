@@ -130,4 +130,43 @@ class EditBanner:
 
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo "updated at" to "{display_date}"')
+    
+    
+    def change_sparkline_graph(file_path, five_commits_additions_and_deletions):
+        # oh boy this was like a challenge from leet code XD 
+        y_points = []
+
+        commit_changes = []
+        for additions, deletions in five_commits_additions_and_deletions:
+            commit_changes.append(additions + deletions)
         
+        max_commit_change = max(commit_changes)
+
+        for commit_change in commit_changes:
+            percentage = commit_change / max_commit_change
+            y_point = 200 - (percentage * 200)
+            y_points.append(int(y_point))
+
+        # flat line for about 100 points, also cut the end of the line as if its going straight upwards
+        combined_points = f'0,200 100,200 200,{y_points[4]} 300,200 400,{y_points[3]} 500,200 600,{y_points[2]} 700,200 800,{y_points[1]} 900,200 1000,{y_points[0]}'
+        
+        sparkline_svg = f"""
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 200'>
+            <defs>
+              <linearGradient id="spikeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#90fe92ff" />
+                <stop offset="50%" stop-color="#10cd4fff" />
+              </linearGradient>
+            </defs>
+              <polyline points="{combined_points}"
+                        fill="none"
+                        stroke="url(#spikeGradient)"
+                        stroke-width="20" />
+            </svg>
+        """
+
+        regex_pattern = r'(<div class="sparkline-graph">)[\s\S]*?(</div>)'
+        replacement = rf'\g<1>{sparkline_svg}\g<2>'
+
+        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        print(f'\nEdited {file_path} sparkline graph')
