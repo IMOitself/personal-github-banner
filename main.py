@@ -8,7 +8,6 @@ GetData = GetData()
 overall_commits = GetData.get_overall_commits()
 days_streak, isStreakPaused = GetData.get_days_streak()
 recent_repo = GetData.get_recently_edited_repo_by_user()
-recent_repo_commit_additions_and_deletions = GetData.get_recent_repo_commit_additions_and_deletions()
 
 EditBanner.change_date_to_today(banner_main)
 EditBanner.change_overall_commits(banner_main, overall_commits)
@@ -18,4 +17,4 @@ EditBanner.change_recent_repo_description(banner_recent_repo, recent_repo['descr
 EditBanner.change_recent_repo_language(banner_recent_repo, recent_repo['primaryLanguage'])
 EditBanner.change_recent_repo_is_archive(banner_recent_repo, recent_repo['isArchived'])
 EditBanner.change_recent_repo_last_update_date(banner_recent_repo, recent_repo['lastUpdateDate'])
-EditBanner.change_sparkline_graph(banner_recent_repo, recent_repo_commit_additions_and_deletions)
+EditBanner.change_sparkline_graph(banner_recent_repo, recent_repo['commitsAndDeletions'])
