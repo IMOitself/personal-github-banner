@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 import os
 import requests
 import json
@@ -87,18 +87,34 @@ class GetData:
                     if (contribution == 0): return (days_streak, isStreakPaused)
                     days_streak += 1
     
-    def get_recent_repo(self):
+    def get_recently_edited_repo_by_user(self):
         query = Path('graphql/recent_repo.graphql').read_text()
-        repo = self.query_graphql(query, {"viewerId": self.viewerId})['data']['viewer']['repositories']['nodes'][0]
+        repos = self.query_graphql(query, {"viewerId": self.viewerId})['data']['viewer']['repositories']['nodes']
+
+        most_recent_repo = None
+        most_recent_repo_commit_date = None
+        for repo in repos:
+            repo_commit_date = repo['defaultBranchRef']['target']['history']['nodes'][0]['committedDate']
+            repo['lastUpdateDate'] = datetime.strptime(repo_commit_date, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc).astimezone()
+
+            is_first_repo = most_recent_repo is None and most_recent_repo_commit_date is None
+            if is_first_repo: 
+                most_recent_repo = repo
+                most_recent_repo_commit_date = repo_commit_date
+                continue
+            
+            if repo_commit_date > most_recent_repo_commit_date: 
+                most_recent_repo = repo
+                most_recent_repo_commit_date = repo_commit_date
+
         # name
         # isArchived
         # description
         # primaryLanguage
         #   name
         #   color
-
-        repo['lastUpdateDate'] = repo['defaultBranchRef']['target']['history']['nodes'][0]['committedDate']
-        return repo
+        # lastUpdateDate
+        return most_recent_repo
     
     def get_recent_repo_commit_additions_and_deletions(self):
         query = Path('graphql/recent_repo_commits.graphql').read_text()

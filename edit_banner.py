@@ -84,7 +84,7 @@ class EditBanner:
             
 
     def change_recent_repo_last_update_date(file_path, updated_at):
-        converted_date = datetime.strptime(updated_at, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc).astimezone()
+        converted_date = updated_at
 
         last_update_date = converted_date.strftime("%B %d")
         today = datetime.now().astimezone().strftime("%B %d")

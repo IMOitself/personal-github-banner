@@ -7,7 +7,7 @@ banner_recent_repo = "banner-recent-repo.svg"
 GetData = GetData()
 overall_commits = GetData.get_overall_commits()
 days_streak, isStreakPaused = GetData.get_days_streak()
-recent_repo = GetData.get_recent_repo()
+recent_repo = GetData.get_recently_edited_repo_by_user()
 recent_repo_commit_additions_and_deletions = GetData.get_recent_repo_commit_additions_and_deletions()
 
 EditBanner.change_date_to_today(banner_main)
