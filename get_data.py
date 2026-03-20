@@ -4,6 +4,7 @@ import requests
 import json
 from dotenv import load_dotenv
 from pathlib import Path
+import time
 
 class GetData:
     def __init__(self):
@@ -14,8 +15,15 @@ class GetData:
     def query_graphql(self, query, variables={}):
         headers = {"Authorization": f"Bearer {self.TOKEN}"}
         URL = "https://api.github.com/graphql"
-        response = requests.post(URL, json={'query': query, 'variables': variables }, headers=headers)
-        return eval(str(response.json()))
+
+        for attempt in range(3):
+            response = requests.post(URL, json={'query': query, 'variables': variables }, headers=headers)
+        
+            if response.status_code == 200:
+                return eval(str(response.json()))
+            # else if it still results an error
+            time.sleep(1)
+
     # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
     
     def get_viewer_id(self):
