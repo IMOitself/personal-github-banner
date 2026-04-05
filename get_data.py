@@ -118,7 +118,7 @@ class GetData:
                 most_recent_repo_commit_date = repo_commit_date
 
         if(most_recent_repo['description'] is None): most_recent_repo['description'] = "<i>No description, website, or topics provided.</i>"
-        most_recent_repo['commitsAndDeletions'] = self.get_repo_commit_additions_and_deletions(most_recent_repo)
+        most_recent_repo['commitAdditionsAndDeletions'] = self.get_repo_commit_additions_and_deletions(most_recent_repo)
         
         # name
         # isArchived
@@ -127,7 +127,7 @@ class GetData:
         #   name
         #   color
         # lastUpdateDate
-        # commitsAndDeletions
+        # commitAdditionsAndDeletions
         
         return most_recent_repo
     
