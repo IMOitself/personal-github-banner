@@ -106,7 +106,6 @@ class GetData:
         for repo in repos:
             repo_commit_date = repo['defaultBranchRef']['target']['history']['nodes'][0]['committedDate']
             repo['lastUpdateDate'] = datetime.strptime(repo_commit_date, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc).astimezone()
-            repo['commitsAndDeletions'] = self.get_repo_commit_additions_and_deletions(repo)
 
             is_first_repo = most_recent_repo is None and most_recent_repo_commit_date is None
             if is_first_repo: 
@@ -118,6 +117,9 @@ class GetData:
                 most_recent_repo = repo
                 most_recent_repo_commit_date = repo_commit_date
 
+        if(most_recent_repo['description'] is None): most_recent_repo['description'] = "<i>No description, website, or topics provided.</i>"
+        most_recent_repo['commitsAndDeletions'] = self.get_repo_commit_additions_and_deletions(most_recent_repo)
+        
         # name
         # isArchived
         # description
@@ -126,6 +128,7 @@ class GetData:
         #   color
         # lastUpdateDate
         # commitsAndDeletions
+        
         return most_recent_repo
     
     def get_repo_commit_additions_and_deletions(self, repo):
