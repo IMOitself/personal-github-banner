@@ -1,7 +1,7 @@
 <div align="center">
 
 ![main banner](banner-main.svg)
-[![recent repo banner](banner-recent-repo.svg)](https://github.com/IMOitself/personal-github-banner/blob/master/redirect-to-recent-repo.html)
+[![recent repo banner](banner-recent-repo.svg)](http://htmlpreview.github.io/?https://github.com/IMOitself/personal-github-banner/blob/master/redirect-to-recent-repo.html)
 
 ## strictly no vibe coding:D 
 
