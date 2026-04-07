@@ -4,10 +4,10 @@ from datetime import datetime, timezone
 
 class EditBanner:
 
-    def banner_replace_content(file_path, regex_pattern, replacement):
-        banner_content = Path(file_path).read_text(encoding='utf-8')
-        new_banner_content = re.sub(regex_pattern, replacement, banner_content)
-        Path(file_path).write_text(new_banner_content, encoding='utf-8')
+    def file_replace_content(file_path, regex_pattern, replacement):
+        file_content = Path(file_path).read_text(encoding='utf-8')
+        new_file_content = re.sub(regex_pattern, replacement, file_content)
+        Path(file_path).write_text(new_file_content, encoding='utf-8')
 
     
     def change_date_to_today(file_path):
@@ -15,7 +15,7 @@ class EditBanner:
         regex_pattern = r'(<p class="date">)[\s\S]*?(</p>)'
         replacement = rf'\g<1>{date_today}\g<2>'
 
-        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
         print(f"\nEdited {file_path} date to {date_today}")
         
     
@@ -24,7 +24,7 @@ class EditBanner:
         regex_pattern = r'(<div class="val">\s*<div class="slot-strip">\s*<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*</div>\s*</div>)'
         replacement = rf'\g<1>{overall_commits:,}\g<2>{overall_commits - 1:,}\g<3>{overall_commits - 2:,}\g<4>'
 
-        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
         print(f"\nEdited {file_path} overall commits to {overall_commits}")
 
 
@@ -34,7 +34,7 @@ class EditBanner:
         regex_pattern = r'(<div class="days_streak")[\s\S]*?(>[\s\S]*?<div class="slot-strip">[\s\S]*?<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*</div>\s*</div>)'
         replacement = rf'\g<1>{style}\g<2>{days_streak:,}\g<3>{days_streak - 1:,}\g<4>'
         
-        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
         print(f"\nEdited {file_path} days streak to {days_streak}")
 
 
@@ -42,7 +42,7 @@ class EditBanner:
         regex_pattern = r'(<div class="repo-name">)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{name}\g<2>'
 
-        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo name to "{name}"')
     
 
@@ -50,7 +50,7 @@ class EditBanner:
         regex_pattern = r'(<div class="repo-desc">)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{description}\g<2>'
 
-        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo description to "{description}"')
     
 
@@ -67,7 +67,7 @@ class EditBanner:
         regex_pattern = r'(<div class="repo-language")[\s\S]*?(>[\s\S]*?<div class="repo-language-color" style="background-color:\s*)[^;"]+(;"\s*/>\s*)[\s\S]*?(\s*</div>)'
         replacement = rf'\g<1>{is_hidden}\g<2>{language_color}\g<3>{language_name}\g<4>'
 
-        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo language to "{language}"')
 
 
@@ -76,7 +76,7 @@ class EditBanner:
         visibility = ' style="opacity: 0;"' if not is_archive else ''
         replacement = rf'\g<1>{visibility}\g<2>'
 
-        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
         if(is_archive):
             print(f'\nEdited {file_path} recent repo to show is-archived')
         else:
@@ -99,7 +99,7 @@ class EditBanner:
         regex_pattern = r'(<div class="repo-updated-at">[\s\S]*?<svg[\s\S]*?</svg>)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{display_date}\g<2>'
 
-        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} recent repo "updated at" to "{display_date}"')
     
     
@@ -153,7 +153,7 @@ class EditBanner:
         regex_pattern = r'(<div class="sparkline-graph">)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{sparkline_svg}\g<2>'
 
-        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} sparkline graph')
 
     
@@ -161,6 +161,6 @@ class EditBanner:
         regex_pattern = r'(<meta http-equiv="refresh" content="0; url=)[\s\S]*?(">)'
         replacement = rf'\g<1>{url}\g<2>'
 
-        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} redirect to recent repo url to {url}')
     
