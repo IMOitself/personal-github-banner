@@ -23,13 +23,15 @@ class GetData:
                 return eval(str(response.json()))
             # else if it still results an error
             time.sleep(1)
+        
+        # if it still results an error after attempts
+        raise Exception(str(response.json()["message"]))
 
     # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
     
     def get_viewer_id(self):
         query = "query { viewer { id } }"
         output = self.query_graphql(query)
-        print("DEBUG: viewerId: ", output)
         return output['data']['viewer']['id']
     
     def get_overall_commits(self):
