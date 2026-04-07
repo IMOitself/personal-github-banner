@@ -56,7 +56,7 @@
         <div class="label">recently updated repository</div>
         <div class="repo-card">
           <div class="sparkline-graph">
-            <!-- DO NOT MODIFY THIS SVG:D. any edit will be overwritten -->
+            <!-- DO NOT MODIFY THIS SVG:D. any edit might be overwritten -->
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 200'>
             <defs>
               <linearGradient id="spikeGradient" x1="0%" y1="0%" x2="0%" y2="100%">

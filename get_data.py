@@ -130,6 +130,8 @@ class GetData:
         #   color
         # lastUpdateDate
         # commitAdditionsAndDeletions
+        # url
+        
         
         return most_recent_repo
     

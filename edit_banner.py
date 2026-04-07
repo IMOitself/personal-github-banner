@@ -155,3 +155,12 @@ class EditBanner:
 
         EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
         print(f'\nEdited {file_path} sparkline graph')
+
+    
+    def change_redirect_to_recent_repo_url(file_path, url):
+        regex_pattern = r'(<meta http-equiv="refresh" content="0; url=)[\s\S]*?(">)'
+        replacement = rf'\g<1>{url}\g<2>'
+
+        EditBanner.banner_replace_content(file_path, regex_pattern, replacement)
+        print(f'\nEdited {file_path} redirect to recent repo url to {url}')
+    

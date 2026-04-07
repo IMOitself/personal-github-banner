@@ -3,6 +3,7 @@ from edit_banner import EditBanner
 
 banner_main = "banner-main.svg"
 banner_recent_repo = "banner-recent-repo.svg"
+redirect_to_recent_repo = "redirect-to-recent-repo.html"
 
 GetData = GetData()
 overall_commits = GetData.get_overall_commits()
@@ -18,3 +19,4 @@ EditBanner.change_recent_repo_language(banner_recent_repo, recent_repo['primaryL
 EditBanner.change_recent_repo_is_archive(banner_recent_repo, recent_repo['isArchived'])
 EditBanner.change_recent_repo_last_update_date(banner_recent_repo, recent_repo['lastUpdateDate'])
 EditBanner.change_sparkline_graph(banner_recent_repo, recent_repo['commitAdditionsAndDeletions'])
+EditBanner.change_redirect_to_recent_repo_url(redirect_to_recent_repo, recent_repo['url'])

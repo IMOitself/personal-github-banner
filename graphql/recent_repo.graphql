@@ -25,6 +25,7 @@ query ($viewerId: ID!) {
                 }
             }
         }
+        url
       }
     }
   }
