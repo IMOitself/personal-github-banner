@@ -11,50 +11,51 @@ class EditBanner:
 
     
     def change_date_to_today(file_path):
+        print(f"\nEditing date to today...")
         date_today = datetime.now().strftime("%B %d, %Y")
         regex_pattern = r'(<p class="date">)[\s\S]*?(</p>)'
         replacement = rf'\g<1>{date_today}\g<2>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
-        print(f"\nEdited {file_path} date to {date_today}")
         
     
     def change_overall_commits(file_path, overall_commits):
+        print(f"\nEditing overall commits...")
         # note: crafting a pattern is very difficult, so sadly i auto generate from ai:(
         regex_pattern = r'(<div class="val">\s*<div class="slot-strip">\s*<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*</div>\s*</div>)'
         replacement = rf'\g<1>{overall_commits:,}\g<2>{overall_commits - 1:,}\g<3>{overall_commits - 2:,}\g<4>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
-        print(f"\nEdited {file_path} overall commits to {overall_commits}")
 
 
     def change_days_streak(file_path, days_streak, isStreakPaused):
+        print(f"\nEditing days streak...")
         # note: ngl the pattern is from ai again :(
         style = ' style="opacity: 0.5;"' if isStreakPaused else ''
         regex_pattern = r'(<div class="days_streak")[\s\S]*?(>[\s\S]*?<div class="slot-strip">[\s\S]*?<div>)[\d,]+(</div>\s*<div>)[\d,]+(</div>\s*</div>\s*</div>)'
         replacement = rf'\g<1>{style}\g<2>{days_streak:,}\g<3>{days_streak - 1:,}\g<4>'
         
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
-        print(f"\nEdited {file_path} days streak to {days_streak}")
 
 
     def change_recent_repo_name(file_path, name):
+        print(f"\nEditing recent repo name...")
         regex_pattern = r'(<div class="repo-name">)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{name}\g<2>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
-        print(f'\nEdited {file_path} recent repo name to "{name}"')
     
 
     def change_recent_repo_description(file_path, description):
+        print(f"\nEditing recent repo description...")
         regex_pattern = r'(<div class="repo-desc">)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{description}\g<2>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
-        print(f'\nEdited {file_path} recent repo description to "{description}"')
     
 
     def change_recent_repo_language(file_path, language):
+        print(f"\nEditing recent repo language...")
         if(language == None):
             language_name = "idk"
             language_color = "#000000"
@@ -68,22 +69,19 @@ class EditBanner:
         replacement = rf'\g<1>{is_hidden}\g<2>{language_color}\g<3>{language_name}\g<4>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
-        print(f'\nEdited {file_path} recent repo language to "{language}"')
 
 
     def change_recent_repo_is_archive(file_path, is_archive):
+        print(f"\nEditing recent repo is-archive...")
         regex_pattern = r'(<div class="repo-is-archive")[>\s\S]*?(>[\s\S]*?</div>)'
         visibility = ' style="opacity: 0;"' if not is_archive else ''
         replacement = rf'\g<1>{visibility}\g<2>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
-        if(is_archive):
-            print(f'\nEdited {file_path} recent repo to show is-archived')
-        else:
-            print(f'\nEdited {file_path} recent repo to hide is-archived')
             
 
     def change_recent_repo_last_update_date(file_path, updated_at):
+        print(f"\nEditing recent repo last update date...")
         converted_date = updated_at
 
         last_update_date = converted_date.strftime("%B %d")
@@ -100,10 +98,10 @@ class EditBanner:
         replacement = rf'\g<1>{display_date}\g<2>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
-        print(f'\nEdited {file_path} recent repo "updated at" to "{display_date}"')
     
     
     def change_sparkline_graph(file_path, five_commits_additions_and_deletions):
+        print(f"\nEditing recent repo sparkline graph...")
         # oh boy this was like a challenge from leet code XD 
         y_points = []
 
@@ -154,13 +152,11 @@ class EditBanner:
         replacement = rf'\g<1>{sparkline_svg}\g<2>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
-        print(f'\nEdited {file_path} sparkline graph')
-
     
     def change_redirect_to_recent_repo_url(file_path, url):
+        print(f"\nEditing redirect to recent repo url...")
         regex_pattern = r'(<meta http-equiv="refresh" content="0; url=)[\s\S]*?(">)'
         replacement = rf'\g<1>{url}\g<2>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
-        print(f'\nEdited {file_path} redirect to recent repo url to {url}')
     
