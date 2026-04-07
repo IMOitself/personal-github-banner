@@ -1,7 +1,7 @@
 <div align="center">
 
 ![main banner](banner-main.svg)
-[![recent repo banner](banner-recent-repo.svg)](https://htmlpreview.github.io/?https://github.com/IMOitself/personal-github-banner/blob/main/redirect-to-recent-repo.html)
+[![recent repo banner](banner-recent-repo.svg)](https://github.com/IMOitself/personal-github-banner/blob/master/redirect-to-recent-repo.html)
 
 ## strictly no vibe coding:D 
 
@@ -43,3 +43,4 @@ made from scratch! my own personalized banners for displaying anything github re
 <img height="300" src="https://github.com/user-attachments/assets/bf5726d8-0f0e-4c3f-9bd2-5b7003ec2cdf" alt="banner">
 </details>
 
+##### Todo: steps on how to add redirect to recent repo to recent repo banner
