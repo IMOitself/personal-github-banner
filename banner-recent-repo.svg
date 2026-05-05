@@ -65,7 +65,7 @@
                 <stop offset="80%" stop-color="#0f9657ff" />
               </linearGradient>
             </defs>
-              <polyline points="0,200 50,200 100,199 150,200 200,0 250,200 300,199 350,200 400,200 450,200 500,199 550,200 600,199 650,200 700,199 750,200 800,199 850,200 900,199 950,200 1000,199"
+              <polyline points="0,200 50,200 100,100 150,200 200,100 250,200 300,100 350,200 400,100 450,200 500,100 550,200 600,0 650,200 700,100 750,200 800,100 850,200 900,100 950,200 1000,100"
                         fill="none"
                         stroke="url(#spikeGradient)"
                         stroke-width="20"
@@ -77,15 +77,15 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="icon" x="0" y="-13" viewBox="0 0 16 16" version="1.1" width="16" height="16">
               <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
             </svg>
-            <div class="repo-name">a1sberg-ctf-walkthrough</div>
+            <div class="repo-name">IMOitself</div>
             <div class="repo-is-archive" style="opacity: 0;">Public archive</div>
           </div>
           <div class="repo-body">
-            <div class="repo-desc">answering on practice website provided for Kyokugen CTF 2026</div>
+            <div class="repo-desc">manually updating this bio everyday with random stuffs :D</div>
           </div>
           <div class="repo-footer">
-            <div class="repo-language">
-              <div class="repo-language-color" style="background-color: #3572A5;"/> Python
+            <div class="repo-language" style="display: none;">
+              <div class="repo-language-color" style="background-color: #000000;"/> idk
             </div>
             <!-- <div class="repo-stars">
               <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" y="-12" viewBox="0 0 16 16" version="1.1" width="16" height="16">
@@ -95,7 +95,7 @@
             </div> -->
             <div class="repo-updated-at">
               <svg xmlns="http://www.w3.org/2000/svg" class="repo-updated-at-icon" role="presentation" viewBox="0 0 24 24"><g fill-rule="evenodd" class="wd-icon-container"><path fill-rule="nonzero" d="M6.182 17.481C7.817 19.161 9.757 20 12 20a8 8 0 0 0 8-8c0-4.418-3.532-7.931-8-8-4.478.1-7.591 3.446-7.94 7.049l-.463-.47a.5.5 0 0 0-.711 0l-.693.7a.5.5 0 0 0 .003.706l2.562 2.557a.5.5 0 0 0 .707 0l2.555-2.557a.5.5 0 0 0 .002-.705l-.695-.705a.5.5 0 0 0-.707-.005l-.546.538C6.316 9.103 8.187 6.032 12 6a6 6 0 1 1 0 12c-1.708 0-3.165-.634-4.37-1.903a.495.495 0 0 0-.705-.024s-.002.002-.004.001l-.726.698a.499.499 0 0 0-.015.707l.002.002z" class="wd-icon-fill"/><path d="M10.498 14a.491.491 0 0 1-.498-.498V9.498c0-.275.214-.498.505-.498h.99c.279 0 .505.215.505.498V12h2.502c.275 0 .498.214.498.505v.99a.496.496 0 0 1-.498.505h-4.004z" class="wd-icon-accent"/></g>
-              </svg>May 04 11pm</div>
+              </svg>Today at 5pm</div>
             </div>
         </div>
 
