@@ -25,7 +25,7 @@ class GetData:
             time.sleep(1)
         
         # if it still results an error after attempts
-        raise Exception(str(response.json()["message"]))
+        raise Exception(str(response.json()))
 
     # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
     
