@@ -48,7 +48,10 @@ class GetData:
 
             for repo in repos:
                 name = repo['nameWithOwner']
-                total_count = repo['defaultBranchRef']['target']['history']['totalCount']
+                try:
+                    total_count = repo['defaultBranchRef']['target']['history']['totalCount']
+                except:
+                    total_count = 0
                 print(total_count, name)
                 overall_commits += int(total_count)
 
@@ -106,7 +109,10 @@ class GetData:
         most_recent_repo = None
         most_recent_repo_commit_date = None
         for repo in repos:
-            if len(repo['defaultBranchRef']['target']['history']['nodes']) == 0: continue
+            try:
+                if len(repo['defaultBranchRef']['target']['history']['nodes']) == 0: continue
+            except:
+                continue
             repo_commit_date = repo['defaultBranchRef']['target']['history']['nodes'][0]['committedDate']
             repo['lastUpdateDate'] = datetime.strptime(repo_commit_date, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc).astimezone()
 

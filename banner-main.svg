@@ -40,7 +40,7 @@
       </style>
 
       <div class="banner">
-          <p class="date">July 14, 2026</p>
+          <p class="date">July 15, 2026</p>
 
         <div class="dashboard">
           <div class="col">
@@ -62,8 +62,8 @@
               </svg>
               <div class="val">
                 <div class="slot-strip">
+                  <div>7</div>
                   <div>6</div>
-                  <div>5</div>
                 </div>
               </div>
             </div>
