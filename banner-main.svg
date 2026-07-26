@@ -27,9 +27,16 @@
         .slot-strip { display: flex; flex-direction: column; animation: scrollDown 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
         .days_streak { display: flex; flex-direction: row; gap: 8px; align-items: center; justify-content: center; overflow: hidden; }
         .fire_icon { fill: #F4F4F4; animation: fire 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+        #langs { font-size: 32px; margin: 0; font-weight: 700; animation: stepScroll 12s cubic-bezier(0.2, 0.8, 0.2, 1) infinite; }
+        #langs > div { display: flex; height: 60px; align-items: center; justify-content: center; }
+        #langs > div > img { width: 40px; margin-right: 8px; }
+        #langs { 
+          animation: 
+          scrollDown 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards, 
+          stepScroll 12s cubic-bezier(0.2, 0.8, 0.2, 1) 2s infinite; 
+          }
         @keyframes scrollDown {
-          0% { transform: translateY(-300%); } 
-          50% { transform: translateY(-300%); } 
+          0%, 50% { transform: translateY(-300%);  } 
           100% { transform: translateY(0); }
         }
         @keyframes fire {
@@ -37,6 +44,15 @@
           80% { opacity: 0; transform: scale(0.5) rotate(45deg); } 
           100% { opacity: 1; transform: scale(1) rotate(0deg); }
         }
+        @keyframes stepScroll {
+          0%, 10%   { transform: translateY(-240px); }
+          20%, 30%  { transform: translateY(-180px); }
+          40%, 50%  { transform: translateY(-120px); }
+          60%, 70%  { transform: translateY(-60px); }
+          80%, 90%  { transform: translateY(0); }
+          100%      { transform: translateY(-240px); }
+        }
+
       </style>
 
       <div class="banner">
@@ -75,12 +91,30 @@
 
           <div class="col">
             <div class="val">
-                <div class="slot-strip">
-                  <div>???</div>
-                  <div>???</div>
-                </div>
+                <div class="slot-strip" id="langs">
+                  <div> 
+                    <img src="https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/main/icons/folder-github.svg">
+                   <p style="color: #F4F4F4">devops</p>
+                  </div>
+                  <div>
+                    <img src="https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/main/icons/laravel.svg">
+                    <p style="color: #9fa4e6">php</p>
+                  </div>
+                  <div>
+                    <img src="https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/main/icons/react.svg">
+                    <p style="color: #FFCA28">js</p>
+                  </div>
+                  <div>
+                    <img src="https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/main/icons/python.svg">
+                    <p style="color: #0288D1">py</p>
+                  </div>
+                  <div>
+                    <img src="https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/main/icons/android.svg">
+                    <p style="color: #d7902e">java</p>
+                  </div>
               </div>
-            <div class="label">coming soon..</div>
+            </div>
+            <div class="label">tech stacks</div>
           </div>
         </div>
       </div>
