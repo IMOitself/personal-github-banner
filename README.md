@@ -8,17 +8,25 @@
 [![recent repo banner](banner-recent-repo.svg)](http://htmlpreview.github.io/?https://github.com/IMOitself/personal-github-banner/blob/master/redirect-to-recent-repo.html)
 
 ## strictly no vibe coding:D 
+made from scratch! my own personalized banners for displaying anything github related to boost productivity
 
 </div>
 
-made from scratch! my own personalized banners for displaying anything github related to boost productivity
+<details>
+<summary><h2>concept art</h2></summary>
+    
+<img height="300" src="https://github.com/user-attachments/assets/bf5726d8-0f0e-4c3f-9bd2-5b7003ec2cdf" alt="banner">
+</details>
 
 <details>
-<summary>
-        
-## running locally
-        
-</summary>
+<summary><h2>usage</h2></summary>
+    
+##### Todo: steps on how to actually use this repository for other people to use
+
+</details>
+
+<details>
+<summary><h2>using locally</h2></summary>
 
 - create a `.env` file
 - put this into your `.env` file and change `your_access_token_here` to your access token:
@@ -36,15 +44,9 @@ made from scratch! my own personalized banners for displaying anything github re
 - **(optional)** for installing autocomplete and intellisense when editing graphql files:
     <br>install [GraphQL: Language Feature Support](https://open-vsx.org/vscode/item?itemName=GraphQL.vscode-graphql) extension.
 
-</details> 
-<details>
-<summary>
-    
-## concept art
-            
-</summary>
-    
-<img height="300" src="https://github.com/user-attachments/assets/bf5726d8-0f0e-4c3f-9bd2-5b7003ec2cdf" alt="banner">
 </details>
+
+## i got the icons from: 
+- [vscode-material-icon-theme](https://github.com/material-extensions/vscode-material-icon-theme)
 
 ##### Todo: steps on how to add redirect to recent repo to recent repo banner
