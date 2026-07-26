@@ -1,4 +1,8 @@
+
 <div align="center">
+
+> for some reason, <code><image src="https://github.githubassets.com/images/gravatars/gravatar-user-420.png" width=15 height=15></image> **IMO's Bot**</code> update the banners on random intervals. its too lazy idk. <br> *its mostly github's fault. but i wanna blame the bot for the sake of lore :D*
+
 
 ![main banner](banner-main.svg)
 [![recent repo banner](banner-recent-repo.svg)](http://htmlpreview.github.io/?https://github.com/IMOitself/personal-github-banner/blob/master/redirect-to-recent-repo.html)
