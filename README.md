@@ -1,7 +1,7 @@
 
 <div align="center">
 
-> for some reason, <code><image src="https://github.githubassets.com/images/gravatars/gravatar-user-420.png" width=15 height=15></image> **IMO's Bot**</code> update the banners on random intervals. its too lazy idk. <br> *its mostly github's fault. but i wanna blame the bot for the sake of lore :D*
+> for some reason, <code><image src="https://github.githubassets.com/images/gravatars/gravatar-user-420.png" width=15 height=15></image> **IMO's Bot**</code> is too lazy. updating banners whenever it feels like it. <br> *its mostly github's fault. but i wanna blame the bot for the sake of lore :D*
 
 
 ![main banner](banner-main.svg)
@@ -46,7 +46,8 @@ made from scratch! my own personalized banners for displaying anything github re
 
 </details>
 
-## i got the icons from: 
+## sources: 
 - [vscode-material-icon-theme](https://github.com/material-extensions/vscode-material-icon-theme)
+- [jetbrains mono](https://www.jetbrains.com/lp/mono/)
 
 ##### Todo: steps on how to add redirect to recent repo to recent repo banner
