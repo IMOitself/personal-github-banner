@@ -14,19 +14,20 @@ made from scratch! my own personalized banners for displaying anything github re
 
 <details>
 <summary><h2>concept art</h2></summary>
-    
+<div align="center">
 <img height="300" src="https://github.com/user-attachments/assets/bf5726d8-0f0e-4c3f-9bd2-5b7003ec2cdf" alt="banner">
+</div>
 </details>
 
 <details>
 <summary><h2>usage</h2></summary>
     
-##### Todo: steps on how to actually use this repository for other people to use
+##### TODO: steps on how to actually use this repository for other people to use
 
 </details>
 
 <details>
-<summary><h2>using locally</h2></summary>
+<summary><h2>editing locally</h2></summary>
 
 - create a `.env` file
 - put this into your `.env` file and change `your_access_token_here` to your access token:
@@ -50,4 +51,4 @@ made from scratch! my own personalized banners for displaying anything github re
 - [vscode-material-icon-theme](https://github.com/material-extensions/vscode-material-icon-theme)
 - [jetbrains mono](https://www.jetbrains.com/lp/mono/)
 
-##### Todo: steps on how to add redirect to recent repo to recent repo banner
+##### TODO: steps on how to add redirect to recent repo to recent repo banner
