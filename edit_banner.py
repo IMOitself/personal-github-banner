@@ -74,7 +74,7 @@ class EditBanner:
     def change_recent_repo_is_archive(file_path, is_archive):
         print(f"\nEditing recent repo is-archive...")
         regex_pattern = r'(<div class="repo-is-archive")[>\s\S]*?(>[\s\S]*?</div>)'
-        visibility = ' style="opacity: 0;"' if not is_archive else ''
+        visibility = ' style="display: none;"' if not is_archive else ''
         replacement = rf'\g<1>{visibility}\g<2>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
