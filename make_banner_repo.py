@@ -13,10 +13,20 @@ class MakeBannerRepo:
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
+
+# <svg width="680" height="230" viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg">
+        # change svg size
+        w = 340
+        h = 167.6
+        regex_pattern = r'(<svg width=")[\s\S]*?("[\s\S]*?height=")[\s\S]*?("[\s\S]*?viewBox="0 0 )[\s\S]*?("[\s\S]*?>)'
+        replacement = rf'\g<1>{w}\g<2>{h}\g<3>{w} {h}\g<4>'
+        new_file_content = re.sub(regex_pattern, replacement, new_file_content)
+        # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
 # '<foreignObject x="0" y="0" width="680" height="230">'
         # change banner width
-        regex_pattern = r'(<foreignObject[\s\S]*?width=")[\s\S]*?("[\s\S]*?>)'
-        replacement = rf'\g<1>340\g<2>'
+        regex_pattern = r'(<foreignObject[\s\S]*?width=")[\s\S]*?("[\s\S]*?height=")[\s\S]*?("[\s\S]*?>)'
+        replacement = rf'\g<1>{w}\g<2>{h}\g<3>'
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
@@ -62,7 +72,7 @@ class MakeBannerRepo:
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-        Path('repo-banners/test.svg').write_text(new_file_content, encoding='utf-8')
+        Path('repo-banners/base.svg').write_text(new_file_content, encoding='utf-8')
 
 
 MakeBannerRepo().base()
