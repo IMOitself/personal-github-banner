@@ -2,9 +2,9 @@ import re
 from pathlib import Path
 
 class MakeBannerRepo:
-    def test(self):
-        base_svg = Path('banner-recent-repo.svg').read_text(encoding='utf-8')
-        new_file_content = base_svg
+    def base(self):
+        reference_svg = Path('banner-recent-repo.svg').read_text(encoding='utf-8')
+        new_file_content = reference_svg
 
 # '<div class="label">recently updated repository</div>'
         # remove label
@@ -62,14 +62,7 @@ class MakeBannerRepo:
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-# <div class="repo-is-archive" style="">Public archive</div>
-        # shorten is archive status instead of 'Public archive'
-        regex_pattern = r'(<div class="repo-is-archive"[\s\S]*?>)[\s\S]*?(</div>)'
-        replacement = rf'\g<1> archive \g<2>'
-        new_file_content = re.sub(regex_pattern, replacement, new_file_content)
-        # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-
         Path('repo-banners/test.svg').write_text(new_file_content, encoding='utf-8')
 
 
-MakeBannerRepo().test()
+MakeBannerRepo().base()
