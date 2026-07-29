@@ -1,0 +1,108 @@
+<svg width="680" height="230" viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject x="0" y="0" width="340" height="230">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .banner { 
+          box-sizing: border-box; 
+          padding: 24px; 
+          display: flex; 
+          flex-direction: column; 
+          justify-items: center;
+          font-family: 'JetBrains Mono', monospace; 
+          color: #F4F4F4;
+          background-color: #2B2D5B;
+          gap: 18px;
+        }
+        .label { 
+          font-size: 18px; 
+          color: #F4F4F4; 
+          padding: 0 24px;
+        }
+        .repo-card {
+          background: transparent;
+          padding: 16px;
+          border-radius: 8px;
+          border: 2px solid #f4f4f489;
+          flex: 1;
+          margin: 0 24px;
+          margin-bottom: 8px;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          overflow: hidden;
+        }
+        .repo-header { display: flex; align-items: center; gap: 8px; }
+        .icon { width: 24px; height: 24px; fill: #F4F4F4; }
+        .repo-name { font-size: 18px; font-weight: bold; }
+        .repo-is-archive { font-size: 12px; border-radius: 20px; padding: 2px 8px; border: 1px solid #EEC444; color: #EEC444; }
+        .repo-body { font-size: 16px; padding: 12px 0px; margin-right: 25%; opacity: 0.8; }
+        .repo-footer { font-size: 12px; display: flex; align-items: center; gap: 32px; color: rgba(255, 255, 255, 0.8); }
+        .repo-language { display: flex; align-items: center; gap: 4px; }
+        .repo-language-color { width: 14px; height: 14px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.3); }
+        .repo-stars { display: flex; align-items: center; gap: 4px; }
+        .repo-updated-at { display: flex; align-items: center; gap: 4px; opacity: 0.8; }
+        .repo-updated-at-icon { width: 18px; height: 18px; fill: #F4F4F4; opacity: 0.8; }
+
+        .sparkline-graph {
+          position: absolute;
+          top: 40%;
+          left: 70%;
+          width: 30%;
+          height: 100%;
+          z-index: 1;
+          opacity: 0.5;
+        }
+      </style>
+
+      <div class="banner">
+        <div class="label" style="display: none;">recently updated repository</div>
+        <div class="repo-card">
+          <div class="sparkline-graph">
+            <!-- DO NOT MODIFY THIS SVG:D. any edit will be overwritten -->
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 200'>
+            <defs>
+              <linearGradient id="spikeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="10%" stop-color="#90fe92ff" />
+                <stop offset="60%" stop-color="#90fe92ff" />
+                <stop offset="80%" stop-color="#0f9657ff" />
+              </linearGradient>
+            </defs>
+              <polyline points="0,200 50,200 100,100 150,200 200,0 250,200 300,190 350,200 400,177 450,200 500,181 550,200 600,194 650,200 700,173 750,200 800,194 850,200 900,196 950,200 1000,194"
+                        fill="none"
+                        stroke="url(#spikeGradient)"
+                        stroke-width="20"
+                        stroke-linejoin="round"
+                        stroke-linecap="round" />
+            </svg>
+        </div>
+          <div class="repo-header">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" x="0" y="-13" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+              <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+            </svg>
+            <div class="repo-name">personal-react-website</div>
+            <div class="repo-is-archive" style="display: none;">Public archive</div>
+          </div>
+          <div class="repo-body">
+            <div class="repo-desc">learning react. July 2026 project.</div>
+          </div>
+          <div class="repo-footer">
+            <div class="repo-language">
+              <div class="repo-language-color" style="background-color: #f1e05a;"/> JavaScript
+            </div>
+            <!-- <div class="repo-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" y="-12" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+              </svg>
+              1
+            </div> -->
+            <div class="repo-updated-at">
+              <svg xmlns="http://www.w3.org/2000/svg" class="repo-updated-at-icon" role="presentation" viewBox="0 0 24 24"><g fill-rule="evenodd" class="wd-icon-container"><path fill-rule="nonzero" d="M6.182 17.481C7.817 19.161 9.757 20 12 20a8 8 0 0 0 8-8c0-4.418-3.532-7.931-8-8-4.478.1-7.591 3.446-7.94 7.049l-.463-.47a.5.5 0 0 0-.711 0l-.693.7a.5.5 0 0 0 .003.706l2.562 2.557a.5.5 0 0 0 .707 0l2.555-2.557a.5.5 0 0 0 .002-.705l-.695-.705a.5.5 0 0 0-.707-.005l-.546.538C6.316 9.103 8.187 6.032 12 6a6 6 0 1 1 0 12c-1.708 0-3.165-.634-4.37-1.903a.495.495 0 0 0-.705-.024s-.002.002-.004.001l-.726.698a.499.499 0 0 0-.015.707l.002.002z" class="wd-icon-fill"/><path d="M10.498 14a.491.491 0 0 1-.498-.498V9.498c0-.275.214-.498.505-.498h.99c.279 0 .505.215.505.498V12h2.502c.275 0 .498.214.498.505v.99a.496.496 0 0 1-.498.505h-4.004z" class="wd-icon-accent"/></g>
+              </svg>last updated at Today 12am</div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </foreignObject>
+    
+</svg>
