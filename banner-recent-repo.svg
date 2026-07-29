@@ -42,6 +42,7 @@
         .repo-stars { display: flex; align-items: center; gap: 4px; }
         .repo-updated-at { display: flex; align-items: center; gap: 4px; opacity: 0.8; }
         .repo-updated-at-icon { width: 18px; height: 18px; fill: #F4F4F4; opacity: 0.8; }
+        .repo-desc { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
         .sparkline-graph {
           position: absolute;
