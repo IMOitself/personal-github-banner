@@ -29,7 +29,8 @@
         .fire_icon { fill: #F4F4F4; animation: fire 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
         #langs { font-size: 32px; margin: 0; font-weight: 700; animation: stepScroll 12s cubic-bezier(0.2, 0.8, 0.2, 1) infinite; }
         #langs > div { display: flex; height: 60px; align-items: center; justify-content: center; }
-        #langs > div > img, svg { width: 40px; margin-right: 8px; }
+        #langs > div > img,
+        #langs > div > svg { width: 40px; margin-right: 8px; }
         #langs { 
           animation: 
           scrollDownLangs 2.15s cubic-bezier(0.2, 0.8, 0.2, 1) forwards, 
@@ -66,7 +67,7 @@
           <div class="col">
             <div class="val">
               <div class="slot-strip">
-                <div>2,530</div> <div>2,529</div> <div>2,528</div>
+                <div>2,530</div> <div>2,529</div> <div>2,528</div><!-- dont delete this comment -->
               </div>
             </div>
             <div class="label">total commits</div>
@@ -83,9 +84,9 @@
                 <div class="slot-strip">
                   <div>15</div>
                   <div>14</div>
-                </div>
-              </div>
+                <!-- dont delete this comment --></div>
             </div>
+          </div>
             <div class="label">days streak</div>
             
             <!-- <div class="label" style="font-size: 9px; margin-top: 2px; margin-bottom: 0;">days</div> -->
