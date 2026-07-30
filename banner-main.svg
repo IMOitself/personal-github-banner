@@ -65,9 +65,11 @@
 
         <div class="dashboard">
           <div class="col">
-            <div class="val">
-              <div class="slot-strip">
-                <div>2,530</div> <div>2,529</div> <div>2,528</div><!-- dont delete this comment -->
+            <div class="total_commits">
+              <div class="val">
+                <div class="slot-strip">
+                  <div>2,530</div> <div>2,529</div> <div>2,528</div><!-- dont delete this comment -->
+                </div>
               </div>
             </div>
             <div class="label">total commits</div>
