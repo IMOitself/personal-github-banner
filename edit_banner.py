@@ -99,7 +99,7 @@ class EditBanner:
         
         is_hidden = ' style="display: none;"' if language == None else ''
         
-        regex_pattern = r'(<div class="repo-language")[\s\S]*?(>[\s\S]*?<div class="repo-language-color" style="background-color:\s*)[\s\S]*?(/>\s*)[\s\S]*?(\s*</div>)'
+        regex_pattern = r'(<div class="repo-language")[\s\S]*?(>[\s\S]*?<div class="repo-language-color" style="background-color:\s*)[\s\S]*?("/>\s*)[\s\S]*?(\s*</div>)'
         replacement = rf'\g<1>{is_hidden}\g<2>{language_color}\g<3>{language_name}\g<4>'
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)

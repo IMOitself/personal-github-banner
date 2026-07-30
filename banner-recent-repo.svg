@@ -88,7 +88,7 @@
           </div>
           <div class="repo-footer">
             <div class="repo-language">
-              <div class="repo-language-color" style="background-color: #f1e05a">
+              <div class="repo-language-color" style="background-color: #f1e05a"/>
               JavaScript
             </div>
             <!-- <div class="repo-stars">
