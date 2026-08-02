@@ -10,6 +10,12 @@ query($cursor: String, $viewerId: ID!) {
       }
       nodes {
         nameWithOwner
+        isArchived
+        description
+        primaryLanguage {
+          name
+          color
+        }
         defaultBranchRef {
             target {
                 ... on Commit {

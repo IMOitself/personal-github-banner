@@ -37,12 +37,12 @@ class GetData:
     def get_overall_commits(self):
         overall_commits = 0
 
-        commit_count_strings = [
+        target_graphql_strings = [
             ('graphql/commits-on-own-repo.graphql', 'repositories'),
             ('graphql/commits-on-other-repo.graphql', 'repositoriesContributedTo')
         ]
 
-        for graphql_path, repo_tag in commit_count_strings:
+        for graphql_path, repo_tag in target_graphql_strings:
             query = Path(graphql_path).read_text()
             repos = self.query_graphql(query, {"viewerId": self.viewerId})['data']['viewer'][repo_tag]['nodes']
 
