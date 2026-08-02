@@ -1,11 +1,11 @@
 from pathlib import Path
 from get_data import GetData
 from edit_banner import EditBanner
-from make_banner_repo import MakeBannerRepo
+from make_mini_repo_banner import MakeMiniRepoBanner
 
 GetData = GetData()
 
-def generate_repo_banners():
+def generate_mini_repo_banners():
     # TODO: move the getting of data to get_data
     target_graphql_strings = [
         ('graphql/commits-on-own-repo.graphql', 'repositories'),
@@ -17,8 +17,8 @@ def generate_repo_banners():
         repos = GetData.query_graphql(query, {"viewerId": GetData.viewerId})['data']['viewer'][repo_tag]['nodes']
 
         for repo in repos:
-            reference_svg = Path('repo-banners/base.svg').read_text(encoding='utf-8')
-            repo_banner_path = f'repo-banners/{repo['nameWithOwner']}.svg'
+            reference_svg = Path('mini-repo-banners/base.svg').read_text(encoding='utf-8')
+            repo_banner_path = f'mini-repo-banners/{repo['nameWithOwner']}.svg'
             Path(repo_banner_path).parent.mkdir(parents=True, exist_ok=True)
             Path(repo_banner_path).write_text(reference_svg, encoding='utf-8')
 
@@ -36,5 +36,5 @@ def generate_repo_banners():
 
 # TODO: only have the repo name to <repo-owner>/<repo-name> if its not the user's repo
 
-MakeBannerRepo().generate_base_svg()
-generate_repo_banners()
+MakeMiniRepoBanner().generate_base_banner()
+generate_mini_repo_banners()

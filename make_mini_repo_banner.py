@@ -1,8 +1,8 @@
 import re
 from pathlib import Path
 
-class MakeBannerRepo:
-    def generate_base_svg(self):
+class MakeMiniRepoBanner:
+    def generate_base_banner(self):
         reference_svg = Path('banner-recent-repo.svg').read_text(encoding='utf-8')
         new_file_content = reference_svg
 
@@ -72,4 +72,4 @@ class MakeBannerRepo:
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-        Path('repo-banners/base.svg').write_text(new_file_content, encoding='utf-8')
+        Path('mini-repo-banners/base.svg').write_text(new_file_content, encoding='utf-8')
