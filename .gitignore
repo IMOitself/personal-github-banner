@@ -1,3 +1,5 @@
 .env
 graphql/help-output.json
 __pycache__
+repo-banners/
+!repo-banners/base.svg
