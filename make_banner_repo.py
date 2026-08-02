@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 
 class MakeBannerRepo:
-    def base(self):
+    def generate_base_svg(self):
         reference_svg = Path('banner-recent-repo.svg').read_text(encoding='utf-8')
         new_file_content = reference_svg
 
@@ -24,7 +24,7 @@ class MakeBannerRepo:
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 # '<foreignObject x="0" y="0" width="680" height="230">'
-        # change banner width
+        # change banner width and height
         regex_pattern = r'(<foreignObject[\s\S]*?width=")[\s\S]*?("[\s\S]*?height=")[\s\S]*?("[\s\S]*?>)'
         replacement = rf'\g<1>{w}\g<2>{h}\g<3>'
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
@@ -73,6 +73,3 @@ class MakeBannerRepo:
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
         Path('repo-banners/base.svg').write_text(new_file_content, encoding='utf-8')
-
-
-MakeBannerRepo().base()
