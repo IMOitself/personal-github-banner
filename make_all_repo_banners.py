@@ -26,6 +26,8 @@ def generate_repo_banners():
             try: total_commit_count = repo['defaultBranchRef']['target']['history']['totalCount']
             except: total_commit_count = 0
 
+            if(repo['description'] is None): repo['description'] = "<i>No description.</i>"
+
             EditBanner.change_recent_repo_name(repo_banner_path, repo['nameWithOwner'])
             EditBanner.change_recent_repo_description(repo_banner_path, repo['description'])
             EditBanner.change_recent_repo_language(repo_banner_path, repo['primaryLanguage'])
