@@ -135,7 +135,7 @@ class EditBanner:
 
         hour = int(converted_date.strftime("%I"))
         am_pm = converted_date.strftime("%p").lower()
-        display_date = "last updated at " + display_date + " " + str(hour) + am_pm
+        display_date = "last updated " + display_date + " " + str(hour) + am_pm
 
         regex_pattern = r'(<div class="repo-updated-at">[\s\S]*?<svg[\s\S]*?</svg>\s*)[\s\S]*?(\s*</div>)'
         replacement = rf'\g<1>{display_date}\g<2>'
