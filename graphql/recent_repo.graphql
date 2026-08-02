@@ -2,7 +2,7 @@ query ($viewerId: ID!) {
   viewer {
     repositories(first: 5, orderBy: {field: UPDATED_AT, direction: DESC}) {
       nodes {
-        name
+        nameWithOwner
         isArchived
         description
         primaryLanguage {

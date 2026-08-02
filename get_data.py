@@ -129,7 +129,7 @@ class GetData:
         if(most_recent_repo['description'] is None): most_recent_repo['description'] = "<i>No description, website, or topics provided.</i>"
         most_recent_repo['commitAdditionsAndDeletions'] = self.get_repo_commit_additions_and_deletions(most_recent_repo)
         
-        # name
+        # nameWithOwner
         # isArchived
         # description
         # primaryLanguage
