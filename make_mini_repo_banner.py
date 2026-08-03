@@ -37,6 +37,13 @@ class MakeMiniRepoBanner:
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
+# <svg class="repo-header-icon" ...>...</svg>
+        # remove header icon
+        regex_pattern = r'(<svg class="repo-header-icon")[\s\S]*?( xmlns="http:[\s\S]*?</svg>)'
+        replacement = rf'\g<1> style="display: none;"\g<2>'
+        new_file_content = re.sub(regex_pattern, replacement, new_file_content)
+        # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
 # <div class="repo-updated-at">...</div>'
         # remove 'last updated at ....'
         regex_pattern = r'(<div class="repo-updated-at")[\s\S]*?(>[\s\S]*?</div>)'
