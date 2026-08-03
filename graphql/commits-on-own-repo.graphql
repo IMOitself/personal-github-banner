@@ -9,6 +9,7 @@ query($cursor: String, $viewerId: ID!) {
         endCursor
       }
       nodes {
+        name
         nameWithOwner
         isArchived
         description
