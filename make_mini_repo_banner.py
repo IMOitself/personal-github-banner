@@ -24,8 +24,17 @@ class MakeMiniRepoBanner:
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 # '<foreignObject x="0" y="0" width="680" height="230">'
-        # change banner width and height
+        # change foreign object width and height
         regex_pattern = r'(<foreignObject[\s\S]*?width=")[\s\S]*?("[\s\S]*?height=")[\s\S]*?("[\s\S]*?>)'
+        replacement = rf'\g<1>{w}\g<2>{h}\g<3>'
+        new_file_content = re.sub(regex_pattern, replacement, new_file_content)
+        # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+# .banner { 
+#   width: 680px;
+#   height: 230px;
+        # change banner's actual width and height 
+        regex_pattern = r'(.banner\s*{[\s\S]*?width: )[\s\S]*?(px;[\s\S]*?height: )[\s\S]*?(px;)'
         replacement = rf'\g<1>{w}\g<2>{h}\g<3>'
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
