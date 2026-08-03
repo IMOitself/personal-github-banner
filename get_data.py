@@ -48,10 +48,10 @@ class GetData:
 
             for repo in repos:
                 name = repo['nameWithOwner']
-                try:
-                    total_count = repo['defaultBranchRef']['target']['history']['totalCount']
-                except:
-                    total_count = 0
+                # try:
+                total_count = repo['defaultBranchRef']['target']['history']['totalCount']
+                # except:
+                #     total_count = 0
                 print(total_count, name)
                 overall_commits += int(total_count)
 
