@@ -20,7 +20,7 @@ query($cursor: String, $viewerId: ID!) {
         defaultBranchRef {
             target {
                 ... on Commit {
-                    history(author: {id: $viewerId}) { totalCount }
+                    historyCommitCount: history(author: {id: $viewerId}) { totalCount }
                 }
             }
         }

@@ -23,11 +23,13 @@ def generate_mini_repo_banners():
             Path(repo_banner_path).write_text(reference_svg, encoding='utf-8')
 
             if(repo['description'] is None): repo['description'] = "<i>No description.</i>"
+            repo['commitCount'] = repo['defaultBranchRef']['target']['historyCommitCount']['totalCount']
 
             EditBanner.change_recent_repo_name(repo_banner_path, repo['nameWithOwner'])
             EditBanner.change_recent_repo_description(repo_banner_path, repo['description'])
             EditBanner.change_recent_repo_language(repo_banner_path, repo['primaryLanguage'])
             EditBanner.change_recent_repo_is_archive(repo_banner_path, repo['isArchived'])
+            EditBanner.change_recent_repo_commit_count(repo_banner_path, repo['commitCount'])
 
 
 # TODO: only have the repo name to <repo-owner>/<repo-name> if its not the user's repo
