@@ -33,7 +33,7 @@
         }
         .repo-header { display: flex; align-items: center; gap: 8px; }
         .repo-header-icon { width: 24px; height: 24px; fill: #F4F4F4; }
-        .repo-name { font-size: 18px; font-weight: bold; }
+        .repo-name { font-size: 18px; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;  }
         .repo-is-archive { font-size: 12px; border-radius: 20px; padding: 2px 8px; border: 1px solid #EEC444; color: #EEC444; }
         .repo-body { font-size: 16px; padding: 12px 0px; margin-right: 25%; opacity: 0.8; }
         .repo-language { display: flex; align-items: center; gap: 4px; }
