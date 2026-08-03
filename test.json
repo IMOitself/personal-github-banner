@@ -1,0 +1,1551 @@
+{
+    "data": {
+        "viewer": {
+            "repositories": {
+                "pageInfo": {
+                    "hasNextPage": true,
+                    "endCursor": "Y3Vyc29yOnYyOpHOTg26ug=="
+                },
+                "nodes": [
+                    {
+                        "nameWithOwner": "IMOaswell/card-game-app-java",
+                        "isArchived": false,
+                        "description": "I did this coz why not",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/card-game-android-java",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/ibispaint-datas",
+                        "isArchived": false,
+                        "description": "my ibispaint datas here:D. Only me should see it",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/card-battle",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/frog",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/install_counter",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/game",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/RoseEditor-AIDE-port",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/Nuts",
+                        "isArchived": false,
+                        "description": "an android code editor, compatible with AIDE :D",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/build_counter",
+                        "isArchived": false,
+                        "description": "an AIDE project:D",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/Text",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/IMOitself",
+                        "isArchived": false,
+                        "description": "manually updating this bio everyday since September 2024 :D",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 694
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/text",
+                        "isArchived": false,
+                        "description": "code editor | android java",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 61
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/textMain",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 40
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/30daysofpython",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/dialogRPG",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/peanutMain",
+                        "isArchived": true,
+                        "description": "peanut repo's app/src/main folder:D",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 10
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/peanut",
+                        "isArchived": false,
+                        "description": "a code editor for ur phone:D",
+                        "primaryLanguage": {
+                            "name": "C++",
+                            "color": "#f34b7d"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 78
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/t",
+                        "isArchived": false,
+                        "description": "fast text editor for android",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 23
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/floating_timer",
+                        "isArchived": false,
+                        "description": "timer for speedrunning. no more, no less.",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/worldbuilding1",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 17
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/game_prototype1",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/popsicle",
+                        "isArchived": false,
+                        "description": "an animating app",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/text_editor_prototype1",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/hunterexam",
+                        "isArchived": true,
+                        "description": "FINISHED - thank u hunter exam group",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 102
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/PuppyGit-IMO",
+                        "isArchived": false,
+                        "description": "An android git client",
+                        "primaryLanguage": {
+                            "name": "Kotlin",
+                            "color": "#A97BFF"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 30
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/AfterRun",
+                        "isArchived": false,
+                        "description": "app that sends command to Termux",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 94
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/AfterGit",
+                        "isArchived": false,
+                        "description": "barebones git client app made in AIDE",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 141
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/AfterBuild",
+                        "isArchived": false,
+                        "description": "app for managing AIDE projects",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 47
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/IMOaswell",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/after-template",
+                        "isArchived": false,
+                        "description": "my template for making android apps:D",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/AfterReadme",
+                        "isArchived": true,
+                        "description": "automatically update README using emojis",
+                        "primaryLanguage": {
+                            "name": "Shell",
+                            "color": "#89e051"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 79
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/AfterGit-Official",
+                        "isArchived": false,
+                        "description": "simplest git client app made in Android Studio",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 9
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/A",
+                        "isArchived": false,
+                        "description": "a test repo for syncing repositories",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 44
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/B",
+                        "isArchived": false,
+                        "description": "a test repo for syncing repositories",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 25
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/IMOaswell",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/emojistats",
+                        "isArchived": false,
+                        "description": "automatically update README using emojis",
+                        "primaryLanguage": {
+                            "name": "Shell",
+                            "color": "#89e051"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 11
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/github-readme-stats",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "JavaScript",
+                            "color": "#f1e05a"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/repo-missile",
+                        "isArchived": true,
+                        "description": "github action to push to a repository",
+                        "primaryLanguage": {
+                            "name": "Shell",
+                            "color": "#89e051"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 62
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/C",
+                        "isArchived": false,
+                        "description": "a test repository for git submodule",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/D",
+                        "isArchived": false,
+                        "description": "a test repository for git submodule",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/commit-catcher",
+                        "isArchived": false,
+                        "description": "sync commits of a github repository to another",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/personal-npc-addon",
+                        "isArchived": false,
+                        "description": "personal npc addon for minecraft bedrock :D",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/wad-html-act",
+                        "isArchived": false,
+                        "description": "2nd year college school project webdev",
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/wad-lab2-html-css",
+                        "isArchived": false,
+                        "description": "2nd year college project webdev",
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/project-generator",
+                        "isArchived": false,
+                        "description": "xml-java project generator written in xml-java",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 24
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/homescreen-readme",
+                        "isArchived": false,
+                        "description": "app for displaying readme of a github repo directly on your home screen to increase productivity",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 73
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/DSA-sample-code",
+                        "isArchived": false,
+                        "description": "open sourced examples used in midterm project (group presentation). LinkedList, Stack and Graph",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/RWD-activities",
+                        "isArchived": false,
+                        "description": "open sourced activities made for Responsive Web Development.",
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/wad-js-activity",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "JavaScript",
+                            "color": "#f1e05a"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/rwd-activity-123",
+                        "isArchived": false,
+                        "description": "responsive web design activity 1-3",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 7
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/rwd-activity-4",
+                        "isArchived": false,
+                        "description": "responsive web design activity 4",
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 9
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/rwd-activity-5",
+                        "isArchived": false,
+                        "description": "responsive web design activity 5",
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/rwd-activity-7",
+                        "isArchived": false,
+                        "description": "responsive web design activity 7",
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/jgit-test",
+                        "isArchived": false,
+                        "description": "an app to test jgit for AIDE projects",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/rwd-activity-8",
+                        "isArchived": false,
+                        "description": "responsive web design midterm practical exam",
+                        "primaryLanguage": {
+                            "name": "CSS",
+                            "color": "#663399"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/MidtrmProjG2",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 53
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/manga-printing",
+                        "isArchived": false,
+                        "description": "printing materials i made for printing manga",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 18
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/countdown-wallpaper",
+                        "isArchived": false,
+                        "description": "add a countdown text to your image and set it as wallpaper.  the countdown is currently set to november 29.",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 13
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/30-Days-Of-TextEditor",
+                        "isArchived": true,
+                        "description": "making an android text editor from scratch in 30 days",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 18
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/rwd-activity-9",
+                        "isArchived": false,
+                        "description": "responsive web design activity 9",
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/rwd-activity-10",
+                        "isArchived": false,
+                        "description": "responsive web design activity 10",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 4
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/bible-first",
+                        "isArchived": false,
+                        "description": "group1 DSA final project",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 43
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "rodolf2/ICTWEEK2026_Kaspersky",
+                        "isArchived": false,
+                        "description": "For CPC ",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/build-code-assist-v3",
+                        "isArchived": true,
+                        "description": "a repo with the purpose of building code assist v3 by tyrone because he hasnt compiled it yet into apk",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 9
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/apkxxxBuilder",
+                        "isArchived": false,
+                        "description": "\u5c06\u9879\u76ee\u81ea\u52a8\u7f16\u8bd1\u6210apk\u6587\u4ef6 .      A useful tool for building android artifacts via Github Action",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/apk-compiler",
+                        "isArchived": false,
+                        "description": "a fork of tyron12233/CodeAssist for direct APK builds via adb or third-party apps.",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 33
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/build-apk-release",
+                        "isArchived": true,
+                        "description": "repository for building IMOitself/build-apk",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/Codedroid",
+                        "isArchived": false,
+                        "description": "Experimental IDE for developing Android applications on Android.",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/wad-laravel-act1",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "PHP",
+                            "color": "#4F5D95"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 7
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/oinkoin",
+                        "isArchived": false,
+                        "description": "Oinkoin is a flutter app for helping you managing your expenses. No internet required.",
+                        "primaryLanguage": {
+                            "name": "Dart",
+                            "color": "#00B4AB"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/interesting-things",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/github-stats",
+                        "isArchived": true,
+                        "description": "automatic github stats display to improve productivity somehow idk",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 8
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/peanut-editor",
+                        "isArchived": false,
+                        "description": "a true quick text editor for android written in java without the ai slop",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 20
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/wad-laravel-act3",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Blade",
+                            "color": "#f7523f"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 9
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/wad-laravel-act2",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "PHP",
+                            "color": "#4F5D95"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 8
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/wad-laravel-act4",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Blade",
+                            "color": "#f7523f"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 9
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOaswell/compiler-trigger",
+                        "isArchived": false,
+                        "description": "a notification that triggers app compilation using https://github.com/IMOitself/apk-compiler",
+                        "primaryLanguage": {
+                            "name": "Java",
+                            "color": "#b07219"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 9
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/readme-stats",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "JavaScript",
+                            "color": "#f1e05a"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/personal-github-banner",
+                        "isArchived": false,
+                        "description": "relearning github graphql and python. March 2026 project.",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 164
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/hci-activity",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/anime-watched-ms",
+                        "isArchived": false,
+                        "description": "wad laravel midterm project",
+                        "primaryLanguage": {
+                            "name": "PHP",
+                            "color": "#4F5D95"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 26
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/wad-laravel-react-act2-3",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "TypeScript",
+                            "color": "#3178c6"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 28
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/a1sberg-ctf-walkthrough",
+                        "isArchived": true,
+                        "description": "answering on practice website provided for Kyokugen CTF 2026",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 83
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/messenger-chat-photo-grabber",
+                        "isArchived": false,
+                        "description": "private project for downloading all photos in a group chat",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 49
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "spac3sc/Ranvid",
+                        "isArchived": false,
+                        "description": "Ranvid, automate the editing processes of ranking videos :D",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/anime-rate-and-roll",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Blade",
+                            "color": "#f7523f"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 13
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/hacker101-ctf-walkthrough",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 8
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/cylabacademy-ctf-walkthrough",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 11
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/forever-seed-finder",
+                        "isArchived": false,
+                        "description": "for minecraft i guess:D",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/kyokugen-ctf-2026",
+                        "isArchived": true,
+                        "description": "finished and unfinished answers on this ctf competition:D",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 12
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "mandocdocmawin-dot/cyverdarian-toolkit",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "HTML",
+                            "color": "#e34c26"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/CLCTF2026",
+                        "isArchived": false,
+                        "description": "practicing cybersecurity awareness :D",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 18
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/CentralLuzonCTF2026",
+                        "isArchived": true,
+                        "description": "finished and unfinished answers on this ctf competition:D",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/04_APPDEV1_EmergingTech",
+                        "isArchived": false,
+                        "description": "identify one emerging technology that is making a significant impact on both education and IT",
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 9
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/git-dojo",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": null,
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 11
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "zamuwelle/VeriVerdad",
+                        "isArchived": false,
+                        "description": "A gamified media literacy platform designed for the UNESCO's Youth Hackathon 2026, empowering students to think critically and verify information in the digital age.",
+                        "primaryLanguage": {
+                            "name": "PHP",
+                            "color": "#4F5D95"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 14
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/APPDEV1",
+                        "isArchived": false,
+                        "description": null,
+                        "primaryLanguage": {
+                            "name": "JavaScript",
+                            "color": "#f1e05a"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 11
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/30-Days-Of-Python",
+                        "isArchived": false,
+                        "description": "relearning python. again.",
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "nameWithOwner": "IMOitself/30-Days-Of-React",
+                        "isArchived": false,
+                        "description": "studying in advance for the upcoming projects :D",
+                        "primaryLanguage": {
+                            "name": "JavaScript",
+                            "color": "#f1e05a"
+                        },
+                        "defaultBranchRef": {
+                            "target": {
+                                "historyCommitCount": {
+                                    "totalCount": 4
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
