@@ -142,6 +142,20 @@ class EditBanner:
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
     
+    def change_recent_repo_commit_count(file_path, commit_count):
+        #
+        #   <div class="repo-commit-count">
+        #     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F4F4F4"><path d="M352.5-325.5Q298-371 284-440H80v-80h204q14-69 68.5-114.5T480-680q73 0 127.5 45.5T676-520h204v80H676q-14 69-68.5 114.5T480-280q-73 0-127.5-45.5ZM480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/></svg>
+        #     67 commits
+        #   </div>
+        #
+        print(f"\nEditing recent repo commit count...")
+        display_commit_count = f"{commit_count} commits"
+        regex_pattern = r'(<div class="repo-commit-count">[\s\S]*?<svg[\s\S]*?</svg>\s*)[\s\S]*?(\s*</div>)'
+        replacement = rf'\g<1>{display_commit_count}\g<2>'
+
+        EditBanner.file_replace_content(file_path, regex_pattern, replacement)
+    
     
     def change_sparkline_graph(file_path, five_commits_additions_and_deletions):
         print(f"\nEditing recent repo sparkline graph...")

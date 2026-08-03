@@ -128,7 +128,7 @@ class GetData:
 
         if(most_recent_repo['description'] is None): most_recent_repo['description'] = "<i>No description, website, or topics provided.</i>"
         most_recent_repo['commitAdditionsAndDeletions'] = self.get_repo_commit_additions_and_deletions(most_recent_repo)
-        
+        most_recent_repo['commitCount'] = most_recent_repo['defaultBranchRef']['target']['historyCommitCount']['totalCount']
         # nameWithOwner
         # isArchived
         # description
@@ -137,6 +137,7 @@ class GetData:
         #   color
         # lastUpdateDate
         # commitAdditionsAndDeletions
+        # commitCount
         # url
         
         

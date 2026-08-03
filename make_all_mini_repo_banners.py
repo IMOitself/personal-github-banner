@@ -22,10 +22,6 @@ def generate_mini_repo_banners():
             Path(repo_banner_path).parent.mkdir(parents=True, exist_ok=True)
             Path(repo_banner_path).write_text(reference_svg, encoding='utf-8')
 
-            # TODO: use this total commit count
-            try: total_commit_count = repo['defaultBranchRef']['target']['history']['totalCount']
-            except: total_commit_count = 0
-
             if(repo['description'] is None): repo['description'] = "<i>No description.</i>"
 
             EditBanner.change_recent_repo_name(repo_banner_path, repo['nameWithOwner'])

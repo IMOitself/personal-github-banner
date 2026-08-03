@@ -12,7 +12,7 @@ query ($viewerId: ID!) {
         defaultBranchRef {
             target {
                 ... on Commit {
-                    history(author: {id: $viewerId}, first: 30) { 
+                    history(author: {id: $viewerId}, first: 30) {
                        nodes {
                         committedDate
                         parents {
@@ -22,6 +22,7 @@ query ($viewerId: ID!) {
                         additions
                        }
                     }
+                    historyCommitCount: history(author: {id: $viewerId}) { totalCount }
                 }
             }
         }

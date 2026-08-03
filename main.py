@@ -18,5 +18,6 @@ EditBanner.change_recent_repo_description(banner_recent_repo, recent_repo['descr
 EditBanner.change_recent_repo_language(banner_recent_repo, recent_repo['primaryLanguage'])
 EditBanner.change_recent_repo_is_archive(banner_recent_repo, recent_repo['isArchived'])
 EditBanner.change_recent_repo_last_update_date(banner_recent_repo, recent_repo['lastUpdateDate'])
+EditBanner.change_recent_repo_commit_count(banner_recent_repo, recent_repo['commitCount'])
 EditBanner.change_sparkline_graph(banner_recent_repo, recent_repo['commitAdditionsAndDeletions'])
 EditBanner.change_redirect_to_recent_repo_url(redirect_to_recent_repo, recent_repo['url'])
