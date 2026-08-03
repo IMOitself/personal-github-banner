@@ -71,5 +71,7 @@ class MakeMiniRepoBanner:
         replacement = rf'\g<1> archive \g<2>'
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-
-        Path('mini-repo-banners/base.svg').write_text(new_file_content, encoding='utf-8')
+        
+        base_svg_path = 'mini-repo-banners/base.svg'
+        Path(base_svg_path).parent.mkdir(parents=True, exist_ok=True)
+        Path(base_svg_path).write_text(new_file_content, encoding='utf-8')
