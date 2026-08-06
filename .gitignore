@@ -1,7 +1,6 @@
 .env
 graphql/help-output.json
 __pycache__
-mini-repo-banners/
 !mini-repo-banners/base.svg
 !mini-repo-banners/hunterexam.svg
 !mini-repo-banners/AfterReadme.svg
@@ -29,3 +28,8 @@ mini-repo-banners/
 !mini-repo-banners/forever-seed-finder.svg
 !mini-repo-banners/kyokugen-ctf-2026.svg
 !mini-repo-banners/CentralLuzonCTF2026.svg
+!mini-repo-banners/setup-some-stuffs.svg
+!mini-repo-banners/ovo.svg
+!mini-repo-banners/personal-react-website.svg
+!mini-repo-banners/zamuwelle/VeriVerdad.svg
+mini-repo-banners/
