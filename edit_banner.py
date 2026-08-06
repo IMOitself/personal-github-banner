@@ -11,7 +11,7 @@ class EditBanner:
 
     
     def change_date_to_today(file_path):
-        print(f"\nEditing date to today...")
+        print(f"Editing {Path(file_path).name} date to today...")
         date_today = datetime.now().strftime("%B %d, %Y")
         regex_pattern = r'(<p class="date">)[\s\S]*?(</p>)'
         replacement = rf'\g<1>{date_today}\g<2>'
@@ -20,7 +20,7 @@ class EditBanner:
         
     
     def change_overall_commits(file_path, overall_commits):
-        print(f"\nEditing overall commits...")
+        print(f"Editing {Path(file_path).name} overall commits...")
         # note: i finally learnt how to redo the regex pattern without AI :D
         #
         #   <div class="total_commits">
@@ -39,7 +39,7 @@ class EditBanner:
 
 
     def change_days_streak(file_path, days_streak, isStreakPaused):
-        print(f"\nEditing days streak...")
+        print(f"Editing {Path(file_path).name} days streak...")
         #
         #   <div class="days_streak">
         #     <svg class="fire_icon" width="40" height="40" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@ class EditBanner:
         #
         #   <div class="repo-name">ovo</div>
         #
-        print(f"\nEditing recent repo name...")
+        print(f"Editing {Path(file_path).name} name...")
         regex_pattern = r'(<div class="repo-name">)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{name}\g<2>'
 
@@ -75,7 +75,7 @@ class EditBanner:
         #
         #   <div class="repo-desc">fun website idea idk. no ai used.</div>
         #
-        print(f"\nEditing recent repo description...")
+        print(f"Editing {Path(file_path).name} description...")
         regex_pattern = r'(<div class="repo-desc">)[\s\S]*?(</div>)'
         replacement = rf'\g<1>{description}\g<2>'
 
@@ -89,7 +89,7 @@ class EditBanner:
         #     JavaScript
         #   </div>
         #
-        print(f"\nEditing recent repo language...")
+        print(f"Editing {Path(file_path).name} language...")
         if(language == None):
             language_name = "idk"
             language_color = "#000000"
@@ -109,7 +109,7 @@ class EditBanner:
         #
         # <div class="repo-is-archive" style="display: none;">Public archive</div>
         #
-        print(f"\nEditing recent repo is-archive...")
+        print(f"Editing {Path(file_path).name} is-archive...")
         regex_pattern = r'(<div class="repo-is-archive")[>\s\S]*?(>[\s\S]*?</div>)'
         visibility = ' style="display: none;"' if not is_archive else ''
         replacement = rf'\g<1>{visibility}\g<2>'
@@ -124,7 +124,7 @@ class EditBanner:
         #     last updated at Today 9am
         #   </div>
         #
-        print(f"\nEditing recent repo last update date...")
+        print(f"Editing {Path(file_path).name} last update date...")
         converted_date = updated_at
 
         last_update_date = converted_date.strftime("%B %d")
@@ -149,7 +149,7 @@ class EditBanner:
         #     67 commits
         #   </div>
         #
-        print(f"\nEditing recent repo commit count...")
+        print(f"Editing {Path(file_path).name} commit count...")
         display_commit_count = f"{commit_count} commits"
         regex_pattern = r'(<div class="repo-commit-count">[\s\S]*?<svg[\s\S]*?</svg>\s*)[\s\S]*?(\s*</div>)'
         replacement = rf'\g<1>{display_commit_count}\g<2>'
@@ -158,7 +158,7 @@ class EditBanner:
     
     
     def change_sparkline_graph(file_path, five_commits_additions_and_deletions):
-        print(f"\nEditing recent repo sparkline graph...")
+        print(f"Editing {Path(file_path).name} sparkline graph...")
         # oh boy this was like a challenge from leet code XD 
         y_points = []
 
@@ -214,7 +214,7 @@ class EditBanner:
         #
         # <meta http-equiv="refresh" content="0; url=https://github.com/IMOitself/ovo">
         #
-        print(f"\nEditing redirect to recent repo url...")
+        print(f"Editing {Path(file_path).name} redirect url...")
         regex_pattern = r'(<meta http-equiv="refresh" content="0; url=)[\s\S]*?(">)'
         replacement = rf'\g<1>{url}\g<2>'
 
