@@ -44,16 +44,23 @@ class GetData:
 
         for graphql_path, repo_tag in target_graphql_strings:
             query = Path(graphql_path).read_text()
-            repos = self.query_graphql(query, {"viewerId": self.viewerId})['data']['viewer'][repo_tag]['nodes']
+            cursor = None
+            while True:
+                result = self.query_graphql(query, {"viewerId": self.viewerId, "cursor": cursor})
+                data = result['data']['viewer'][repo_tag]
+                repos = data['nodes']
 
-            for repo in repos:
-                name = repo['nameWithOwner']
-                try:
-                    total_count = repo['defaultBranchRef']['target']['historyCommitCount']['totalCount']
-                except:
-                    total_count = 0
-                print(total_count, name)
-                overall_commits += int(total_count)
+                for repo in repos:
+                    name = repo['nameWithOwner']
+                    try:
+                        total_count = repo['defaultBranchRef']['target']['historyCommitCount']['totalCount']
+                    except:
+                        total_count = 0
+                    print(total_count, name)
+                    overall_commits += int(total_count)
+
+                if not data['pageInfo']['hasNextPage']: break
+                cursor = data['pageInfo']['endCursor']
 
         return overall_commits
     

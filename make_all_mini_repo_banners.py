@@ -16,25 +16,33 @@ def generate_mini_repo_banners():
 
     for graphql_path, repo_tag in target_graphql_strings:
         query = Path(graphql_path).read_text()
-        repos = GetData.query_graphql(query, {"viewerId": GetData.viewerId})['data']['viewer'][repo_tag]['nodes']
+        cursor = None
+        while True:
+            result = GetData.query_graphql(query, {"viewerId": GetData.viewerId, "cursor": cursor})
+            data = result['data']['viewer'][repo_tag]
+            repos = data['nodes']
 
-        for repo in repos:
-            reference_svg = Path('mini-repo-banners/base.svg').read_text(encoding='utf-8')
+            for repo in repos:
+                reference_svg = Path('mini-repo-banners/base.svg').read_text(encoding='utf-8')
 
-            try: repo['name']
-            except: repo['name'] = repo['nameWithOwner']
-            if(repo['description'] is None): repo['description'] = "<i>No description.</i>"
-            repo['commitCount'] = repo['defaultBranchRef']['target']['historyCommitCount']['totalCount']
+                try: repo['name']
+                except: repo['name'] = repo['nameWithOwner']
+                if(repo['description'] is None): repo['description'] = "<i>No description.</i>"
+                repo['commitCount'] = repo['defaultBranchRef']['target']['historyCommitCount']['totalCount']
 
-            repo_banner_path = f'mini-repo-banners/{repo['name']}.svg'
-            Path(repo_banner_path).parent.mkdir(parents=True, exist_ok=True)
-            Path(repo_banner_path).write_text(reference_svg, encoding='utf-8')
-
-            EditBanner.change_recent_repo_name(repo_banner_path, repo['name'])
-            EditBanner.change_recent_repo_description(repo_banner_path, repo['description'])
-            EditBanner.change_recent_repo_language(repo_banner_path, repo['primaryLanguage'])
-            EditBanner.change_recent_repo_is_archive(repo_banner_path, repo['isArchived'])
-            EditBanner.change_recent_repo_commit_count(repo_banner_path, repo['commitCount'])
+                repo_banner_path = f'mini-repo-banners/{repo['name']}.svg'
+                Path(repo_banner_path).parent.mkdir(parents=True, exist_ok=True)
+                Path(repo_banner_path).write_text(reference_svg, encoding='utf-8')
+                
+                EditBanner.change_recent_repo_name(repo_banner_path, repo['name'])
+                EditBanner.change_recent_repo_description(repo_banner_path, repo['description'])
+                EditBanner.change_recent_repo_language(repo_banner_path, repo['primaryLanguage'])
+                EditBanner.change_recent_repo_is_archive(repo_banner_path, repo['isArchived'])
+                EditBanner.change_recent_repo_commit_count(repo_banner_path, repo['commitCount'])
+            
+            if not data['pageInfo']['hasNextPage']:
+                break
+            cursor = data['pageInfo']['endCursor']
 
         target_graphql_index += 1
 
