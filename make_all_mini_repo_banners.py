@@ -23,7 +23,7 @@ def generate_mini_repo_banners():
             repos = data['nodes']
 
             for repo in repos:
-                reference_svg = Path('mini-repo-banners/base.svg').read_text(encoding='utf-8')
+                reference_svg = Path(MakeMiniRepoBanner.base_svg_path).read_text(encoding='utf-8')
 
                 try: repo['name']
                 except: repo['name'] = repo['nameWithOwner']
@@ -46,7 +46,5 @@ def generate_mini_repo_banners():
 
         target_graphql_index += 1
 
-# TODO: only have the repo name to <repo-owner>/<repo-name> if its not the user's repo
-
-MakeMiniRepoBanner().generate_base_banner()
+if not Path(MakeMiniRepoBanner.base_svg_path).exist(): MakeMiniRepoBanner().generate_base_banner()
 generate_mini_repo_banners()
