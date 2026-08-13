@@ -18,7 +18,7 @@ class MakeMiniRepoBanner:
 
 # <svg width="680" height="230" viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg">
         # change svg size
-        w = 340
+        w = 340 + 6 # padding 6px
         h = 167.6
         regex_pattern = r'(<svg width=")[\s\S]*?("[\s\S]*?height=")[\s\S]*?("[\s\S]*?viewBox="0 0 )[\s\S]*?("[\s\S]*?>)'
         replacement = rf'\g<1>{w}\g<2>{h}\g<3>{w} {h}\g<4>'
@@ -79,7 +79,7 @@ class MakeMiniRepoBanner:
 # <div class="banner">...</div>'
         # smaller banner padding
         regex_pattern = r'(<div class="banner")[\s\S]*?(>[\s\S]*?</div>)'
-        replacement = rf'\g<1> style="padding: 16px"\g<2>'
+        replacement = rf'\g<1> style="padding: 16px; margin: 0 3px"\g<2>'
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
