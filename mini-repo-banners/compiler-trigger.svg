@@ -12,7 +12,7 @@
           justify-items: center;
           font-family: 'JetBrains Mono', monospace; 
           color: #F4F4F4;
-          background-color: #2B2D5B;
+          
           gap: 18px;
         }
         .label { 
@@ -21,7 +21,7 @@
           padding: 0 24px;
         }
         .repo-card {
-          background: transparent;
+           background-color: #2B2D5B; 
           padding: 16px;
           border-radius: 8px;
           border: 2px solid #f4f4f489;

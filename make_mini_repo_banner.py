@@ -90,5 +90,23 @@ class MakeMiniRepoBanner:
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
+# .banner { ... background-color: #2B2D5B; ... }
+        # get banner background
+        match = re.search(r'\.banner[\s\S]*?{[\s\S]*?(background-color:[\s\S]*?;)[\s\S]*?}', new_file_content)
+        background = match.group(1).strip() if match else ''
+
+        # remove banner background
+        regex_pattern = r'(\.banner[\s\S]*?{[\s\S]*?)background-color:[\s\S]*?;([\s\S]*?})'
+        replacement = rf'\g<1>\g<2>'
+        new_file_content = re.sub(regex_pattern, replacement, new_file_content)
+        # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+# .repo-card { background: transparent; ... }
+        # add background to repo card
+        regex_pattern = r'(\.repo-card[\s\S]*?{[\s\S]*?)background:[\s\S]*?;([\s\S]*?})'
+        replacement = rf'\g<1> {background} \g<2>'
+        new_file_content = re.sub(regex_pattern, replacement, new_file_content)
+        # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
         Path(self.base_svg_path).parent.mkdir(parents=True, exist_ok=True)
         Path(self.base_svg_path).write_text(new_file_content, encoding='utf-8')
