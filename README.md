@@ -1,8 +1,7 @@
+> [!TIP]
+> sometimes, <code><image src="https://github.githubassets.com/images/gravatars/gravatar-user-420.png" width=15 height=15></image> **IMO's Bot**</code> is way too lazy. only updating banners whenever it feels like it. *its mostly github's fault. but i wanna blame the bot for the sake of lore :D*
 
 <div align="center">
-
-> for some reason, <code><image src="https://github.githubassets.com/images/gravatars/gravatar-user-420.png" width=15 height=15></image> **IMO's Bot**</code> is too lazy. updating banners whenever it feels like it. <br> *its mostly github's fault. but i wanna blame the bot for the sake of lore :D*
-
 
 ![main banner](banner-main.svg)
 [![recent repo banner](banner-recent-repo.svg)](http://htmlpreview.github.io/?https://github.com/IMOitself/personal-github-banner/blob/master/redirect-to-recent-repo.html)
@@ -10,7 +9,11 @@
 ## strictly no vibe coding:D 
 made from scratch! my own personalized banners for displaying anything github related to boost productivity
 
-</div>
+<br><br>
+
+<table>
+<tr>
+<td>
 
 <details>
 <summary><h2>concept art</h2></summary>
@@ -22,12 +25,20 @@ made from scratch! my own personalized banners for displaying anything github re
 <details>
 <summary><h2>usage</h2></summary>
     
-##### TODO: steps on how to actually use this repository for other people to use
+##### TODO: steps on how to actually use this repository for other people to use.
+involves:
+- forking this repository
+- setting up github actions secret
+- running `main.py` to generate `banner-main.svg` and `banner-recent-repo.svg`
+- linking banners to your `README.md` or somewhere else
+- setting link of `banner-recent-repo.svg` on your `README.md` to dynamically redirect to displayed repo (optional)
+- running `make_all_mini_repo_banners.py` to generate mini repo banners (optional)
 
-</details>
+if u figure out how to do it urself then congratulations.<br>
+else, idk am lazy to create step by step guide :D
 
 <details>
-<summary><h2>editing locally</h2></summary>
+<summary><h2>using locally</h2></summary>
 
 - create a `.env` file
 - put this into your `.env` file and change `your_access_token_here` to your access token:
@@ -47,8 +58,15 @@ made from scratch! my own personalized banners for displaying anything github re
 
 </details>
 
-## sources: 
-- [vscode-material-icon-theme](https://github.com/material-extensions/vscode-material-icon-theme)
-- [jetbrains mono](https://www.jetbrains.com/lp/mono/)
+</details>
 
-##### TODO: steps on how to add redirect to recent repo to recent repo banner
+
+## resources i used: 
+[vscode-material-icon-theme](https://github.com/material-extensions/vscode-material-icon-theme)
+[jetbrains mono](https://www.jetbrains.com/lp/mono/)
+
+</td>
+</tr>
+</table>
+
+</div>
