@@ -46,5 +46,5 @@ def generate_mini_repo_banners():
 
         target_graphql_index += 1
 
-if not Path(MakeMiniRepoBanner.base_svg_path).exists(): MakeMiniRepoBanner().generate_base_banner()
+MakeMiniRepoBanner().generate_base_banner()
 generate_mini_repo_banners()

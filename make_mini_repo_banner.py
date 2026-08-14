@@ -43,8 +43,8 @@ class MakeMiniRepoBanner:
 
 # <div class="sparkline-graph">...</div>'
         # remove sparkline graph
-        regex_pattern = r'(<div class="sparkline-graph")[\s\S]*?(>[\s\S]*?</div>)'
-        replacement = rf'\g<1> style="display: none;"\g<2>'
+        regex_pattern = r'(<div class="sparkline-graph">)[\s\S]*?(</div>)'
+        replacement = rf'\g<1> \g<2>'
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
@@ -89,6 +89,6 @@ class MakeMiniRepoBanner:
         replacement = rf'\g<1> archive \g<2>'
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-        
+
         Path(self.base_svg_path).parent.mkdir(parents=True, exist_ok=True)
         Path(self.base_svg_path).write_text(new_file_content, encoding='utf-8')
