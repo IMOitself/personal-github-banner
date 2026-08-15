@@ -32,7 +32,7 @@ class MakeMiniRepoBanner:
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-# .banner { 
+# .banner {
 #   width: 680px;
 #   height: 230px;
         # change banner's actual width and height 
@@ -57,8 +57,8 @@ class MakeMiniRepoBanner:
 
 # <div class="repo-updated-at">...</div>'
         # remove 'last updated at ....'
-        regex_pattern = r'(<div class="repo-updated-at")[\s\S]*?(>[\s\S]*?</div>)'
-        replacement = rf'\g<1> style="display: none;"\g<2>'
+        regex_pattern = r'(<div class="repo-updated-at">)[\s\S]*?(</div>)'
+        replacement = rf'\g<1> \g<2>'
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
