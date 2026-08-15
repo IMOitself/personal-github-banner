@@ -1,7 +1,7 @@
 from pathlib import Path
 from get_data import GetData
 from edit_banner import EditBanner
-from make_mini_repo_banner import MakeMiniRepoBanner
+from make_base_mini_repo_banner import MakeBaseMiniRepoBanner
 
 GetData = GetData()
 
@@ -23,7 +23,7 @@ def generate_mini_repo_banners():
             repos = data['nodes']
 
             for repo in repos:
-                reference_svg = Path(MakeMiniRepoBanner.base_svg_path).read_text(encoding='utf-8')
+                reference_svg = Path(MakeBaseMiniRepoBanner.base_svg_path).read_text(encoding='utf-8')
 
                 try: repo['name']
                 except: repo['name'] = repo['nameWithOwner']
@@ -46,5 +46,5 @@ def generate_mini_repo_banners():
 
         target_graphql_index += 1
 
-MakeMiniRepoBanner().generate_base_banner()
+MakeBaseMiniRepoBanner().generate_base_banner()
 generate_mini_repo_banners()

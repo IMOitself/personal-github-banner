@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 from edit_banner import EditBanner
 
-class MakeMiniRepoBanner:
+class MakeBaseMiniRepoBanner:
     base_svg_path = 'mini-repo-banners/base.svg'
 
     def generate_base_banner(self):
