@@ -34,11 +34,11 @@ def generate_mini_repo_banners():
                 Path(repo_banner_path).parent.mkdir(parents=True, exist_ok=True)
                 Path(repo_banner_path).write_text(reference_svg, encoding='utf-8')
                 
-                EditBanner.change_recent_repo_name(repo_banner_path, repo['name'])
-                EditBanner.change_recent_repo_description(repo_banner_path, repo['description'])
-                EditBanner.change_recent_repo_language(repo_banner_path, repo['primaryLanguage'])
-                EditBanner.change_recent_repo_is_archive(repo_banner_path, repo['isArchived'])
-                EditBanner.change_recent_repo_commit_count(repo_banner_path, repo['commitCount'])
+                EditBanner.change_repo_name(repo_banner_path, repo['name'])
+                EditBanner.change_repo_description(repo_banner_path, repo['description'])
+                EditBanner.change_repo_language(repo_banner_path, repo['primaryLanguage'])
+                EditBanner.change_repo_is_archive(repo_banner_path, repo['isArchived'])
+                EditBanner.change_repo_commit_count(repo_banner_path, repo['commitCount'])
             
             if not data['pageInfo']['hasNextPage']:
                 break

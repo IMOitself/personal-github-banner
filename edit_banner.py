@@ -60,7 +60,7 @@ class EditBanner:
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
 
 
-    def change_recent_repo_name(file_path, name):
+    def change_repo_name(file_path, name):
         #
         #   <div class="repo-name">ovo</div>
         #
@@ -71,7 +71,7 @@ class EditBanner:
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
     
 
-    def change_recent_repo_description(file_path, description):
+    def change_repo_description(file_path, description):
         #
         #   <div class="repo-desc">fun website idea idk. no ai used.</div>
         #
@@ -82,7 +82,7 @@ class EditBanner:
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
     
 
-    def change_recent_repo_language(file_path, language):
+    def change_repo_language(file_path, language):
         #
         #   <div class="repo-language">
         #     <div class="repo-language-color" style="background-color: #f1e05a;"/>
@@ -105,7 +105,7 @@ class EditBanner:
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
 
 
-    def change_recent_repo_is_archive(file_path, is_archive):
+    def change_repo_is_archive(file_path, is_archive):
         #
         # <div class="repo-is-archive" style="display: none;">Public archive</div>
         #
@@ -117,7 +117,7 @@ class EditBanner:
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
             
 
-    def change_recent_repo_last_update_date(file_path, updated_at):
+    def change_repo_last_update_date(file_path, updated_at):
         #
         #   <div class="repo-updated-at">
         #     <svg xmlns="http://www.w3.org/2000/svg" class="repo-updated-at-icon" role="presentation" viewBox="0 0 24 24"><g fill-rule="evenodd" class="wd-icon-container"><path fill-rule="nonzero" d="M6.182 17.481C7.817 19.161 9.757 20 12 20a8 8 0 0 0 8-8c0-4.418-3.532-7.931-8-8-4.478.1-7.591 3.446-7.94 7.049l-.463-.47a.5.5 0 0 0-.711 0l-.693.7a.5.5 0 0 0 .003.706l2.562 2.557a.5.5 0 0 0 .707 0l2.555-2.557a.5.5 0 0 0 .002-.705l-.695-.705a.5.5 0 0 0-.707-.005l-.546.538C6.316 9.103 8.187 6.032 12 6a6 6 0 1 1 0 12c-1.708 0-3.165-.634-4.37-1.903a.495.495 0 0 0-.705-.024s-.002.002-.004.001l-.726.698a.499.499 0 0 0-.015.707l.002.002z" class="wd-icon-fill"/><path d="M10.498 14a.491.491 0 0 1-.498-.498V9.498c0-.275.214-.498.505-.498h.99c.279 0 .505.215.505.498V12h2.502c.275 0 .498.214.498.505v.99a.496.496 0 0 1-.498.505h-4.004z" class="wd-icon-accent"/></g></svg>
@@ -142,7 +142,7 @@ class EditBanner:
 
         EditBanner.file_replace_content(file_path, regex_pattern, replacement)
     
-    def change_recent_repo_commit_count(file_path, commit_count):
+    def change_repo_commit_count(file_path, commit_count):
         #
         #   <div class="repo-commit-count">
         #     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F4F4F4"><path d="M352.5-325.5Q298-371 284-440H80v-80h204q14-69 68.5-114.5T480-680q73 0 127.5 45.5T676-520h204v80H676q-14 69-68.5 114.5T480-280q-73 0-127.5-45.5ZM480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/></svg>

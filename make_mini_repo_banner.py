@@ -112,8 +112,8 @@ class MakeMiniRepoBanner:
         Path(self.base_svg_path).parent.mkdir(parents=True, exist_ok=True)
         Path(self.base_svg_path).write_text(new_file_content, encoding='utf-8')
 
-        EditBanner.change_recent_repo_name(self.base_svg_path, 'dummy repo name')
-        EditBanner.change_recent_repo_description(self.base_svg_path, 'dummy long ahh repo description that should be waaaaaaay too long idk')
-        EditBanner.change_recent_repo_language(self.base_svg_path, {'name': 'lolcat', 'color': "#D5B4AA"})
-        EditBanner.change_recent_repo_is_archive(self.base_svg_path, True)
-        EditBanner.change_recent_repo_commit_count(self.base_svg_path, 67)
+        EditBanner.change_repo_name(self.base_svg_path, 'dummy repo name')
+        EditBanner.change_repo_description(self.base_svg_path, 'dummy long ahh repo description that should be waaaaaaay too long idk')
+        EditBanner.change_repo_language(self.base_svg_path, {'name': 'lolcat', 'color': "#D5B4AA"})
+        EditBanner.change_repo_is_archive(self.base_svg_path, True)
+        EditBanner.change_repo_commit_count(self.base_svg_path, 67)
