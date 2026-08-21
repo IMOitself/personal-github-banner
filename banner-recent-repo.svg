@@ -69,7 +69,7 @@
                 <stop offset="80%" stop-color="#0f9657ff" />
               </linearGradient>
             </defs>
-              <polyline points="0,200 50,200 100,100 150,200 200,0 250,200 300,100 350,200 400,100 450,200 500,100 550,200 600,100 650,200 700,0 750,200 800,100 850,200 900,100 950,200 1000,100"
+              <polyline points="0,200 50,200 100,85 150,200 200,142 250,200 300,142 350,200 400,142 450,200 500,142 550,200 600,85 650,200 700,142 750,200 800,142 850,200 900,142 950,200 1000,0"
                         fill="none"
                         stroke="url(#spikeGradient)"
                         stroke-width="20"
@@ -94,11 +94,11 @@
             </div>
             <div class="repo-commit-count">
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F4F4F4"><path d="M352.5-325.5Q298-371 284-440H80v-80h204q14-69 68.5-114.5T480-680q73 0 127.5 45.5T676-520h204v80H676q-14 69-68.5 114.5T480-280q-73 0-127.5-45.5ZM480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/></svg>
-              729 commits
+              730 commits
             </div>
             <div class="repo-updated-at">
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F4F4F4"><path d="M326-171q-15-11-22-28l-92-241H40v-80h228l92 244 184-485q7-17 22-28t34-11q19 0 34 11t22 28l92 241h172v80H692l-92-244-184 485q-7 17-22 28t-34 11q-19 0-34-11Z"/></svg>
-              last updated August 20 2pm
+              last updated Today 9am
             </div>
           </div>
         </div>
