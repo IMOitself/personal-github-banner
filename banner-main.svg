@@ -12,8 +12,9 @@
           justify-items: center;
           font-family: 'JetBrains Mono', monospace; 
           color: #F4F4F4;
-          background-color: #2B2D5B;
           letter-spacing: 1.5px;
+          background-color: #2B2D5B;
+          border-radius: 8px 8px 0 0;
         }
         
         .today-header {margin-bottom: 5px}
