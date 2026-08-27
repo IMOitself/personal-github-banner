@@ -109,6 +109,13 @@ class MakeBaseMiniRepoBanner:
         new_file_content = re.sub(regex_pattern, replacement, new_file_content)
         # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
+# border-radius: 0 0 8px 8px;
+        # remove border radius
+        regex_pattern = r'(\.banner[\s\S]*?{[\s\S]*?)border-radius:[\s\S]*?;([\s\S]*?})'
+        replacement = rf'\g<1>\g<2>'
+        new_file_content = re.sub(regex_pattern, replacement, new_file_content)
+        # -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
         Path(self.base_svg_path).parent.mkdir(parents=True, exist_ok=True)
         Path(self.base_svg_path).write_text(new_file_content, encoding='utf-8')
 
