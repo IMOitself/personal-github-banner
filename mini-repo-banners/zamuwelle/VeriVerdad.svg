@@ -12,8 +12,9 @@
           justify-items: center;
           font-family: 'JetBrains Mono', monospace; 
           color: #F4F4F4;
-          
           gap: 18px;
+          
+          
         }
         .label { 
           font-size: 18px; 
