@@ -12,7 +12,7 @@ class EditBanner:
     
     def change_date_to_today(file_path):
         print(f"Editing {Path(file_path).name} date to today...")
-        date_today = datetime.now().strftime("%B %d, %Y")
+        date_today = datetime.now().strftime("%B %d, %Y").lower()
         regex_pattern = r'(<p class="date">)[\s\S]*?(</p>)'
         replacement = rf'\g<1>{date_today}\g<2>'
 
