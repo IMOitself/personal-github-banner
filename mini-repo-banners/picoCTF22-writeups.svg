@@ -69,7 +69,7 @@
             <div class="repo-is-archive" style="display: none;"> archive </div>
           </div>
           <div class="repo-body" style="margin: 0">
-            <div class="repo-desc">CTF challenges from picoCTF 2022 :D w/ actual recordings</div>
+            <div class="repo-desc">CTF challenges from picoCTF 2022 w/ actual recordings :D</div>
           </div>
           <div class="repo-footer">
             <div class="repo-language">
