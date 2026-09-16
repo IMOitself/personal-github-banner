@@ -39,7 +39,7 @@ def generate_mini_repo_banners():
                 EditBanner.change_repo_language(repo_banner_path, repo['primaryLanguage'])
                 EditBanner.change_repo_is_archive(repo_banner_path, repo['isArchived'])
                 EditBanner.change_repo_commit_count(repo_banner_path, repo['commitCount'])
-                EditBanner.toggle_repo_is_private_icon(repo_banner_path, repo['isPrivate'])
+                EditBanner.toggle_repo_is_private_icon(repo_banner_path, repo['isPrivate'], True)
             
             if not data['pageInfo']['hasNextPage']:
                 break

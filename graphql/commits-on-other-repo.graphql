@@ -11,6 +11,7 @@ query($cursor: String, $viewerId: ID!) {
       }
       nodes {
         nameWithOwner
+        isPrivate
         isArchived
         description
         primaryLanguage {
