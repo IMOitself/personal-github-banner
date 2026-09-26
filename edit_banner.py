@@ -127,8 +127,8 @@ class EditBanner:
         print(f"Editing {Path(file_path).name} last update date...")
         converted_date = updated_at
 
-        last_update_date = converted_date.strftime("%B %d")
-        today = datetime.now().astimezone().strftime("%B %d")
+        last_update_date = converted_date.strftime("%b %d")
+        today = datetime.now().astimezone().strftime("%b %d")
 
         display_date = last_update_date # ex. March 15
         if(last_update_date == today): display_date = "Today"
