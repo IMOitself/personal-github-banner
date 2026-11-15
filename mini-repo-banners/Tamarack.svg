@@ -69,7 +69,7 @@
             <div class="repo-is-archive" style="display: none;"> archive </div>
           </div>
           <div class="repo-body" style="margin: 0">
-            <div class="repo-desc">will have a description later idk:D</div>
+            <div class="repo-desc">an android IDE. for now its for C/C++</div>
           </div>
           <div class="repo-footer">
             <div class="repo-language">
